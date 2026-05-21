@@ -43,6 +43,16 @@ export default async function LatestPositionPage() {
     }
   })
 
+  // Calculate AD Ratio (Advances / Deposits)
+  const totalDeposit = getNumericValue(highlightCards.find(c => c.label === "Total Deposit")?.value || "0");
+  const loansAdvances = getNumericValue(highlightCards.find(c => c.label === "Loans & Advances")?.value || "0");
+  
+  // Banking convention: Advances are often shown as negative in GL but we need absolute for ratio
+  const absAdvances = Math.abs(loansAdvances);
+  const absDeposits = Math.abs(totalDeposit);
+  
+  const adRatio = absDeposits !== 0 ? (absAdvances / absDeposits) * 100 : 0;
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-gray-50 min-h-screen">
       <div className="mb-10 flex justify-between items-center">
@@ -76,6 +86,30 @@ export default async function LatestPositionPage() {
         </div>
       ) : (
         <div className="space-y-12">
+          {/* Main AD Ratio Highlight */}
+          <div className="bg-gradient-to-r from-cyan-600 to-blue-700 rounded-3xl p-8 text-white shadow-xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 -mr-20 -mt-20 bg-white opacity-10 rounded-full"></div>
+            <div className="relative z-10 flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="text-center md:text-left">
+                <h2 className="text-xl font-medium opacity-80 uppercase tracking-widest">Advance-to-Deposit Ratio (AD Ratio)</h2>
+                <div className="mt-2 flex items-baseline gap-2">
+                  <span className="text-6xl font-black">{adRatio.toFixed(2)}%</span>
+                </div>
+              </div>
+              <div className="flex gap-8 items-center bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
+                <div className="text-center">
+                  <p className="text-xs uppercase opacity-70 font-bold mb-1">Total Deposit</p>
+                  <p className="text-xl font-bold">{formatBalance(highlightCards.find(c => c.label === "Total Deposit")?.value)}</p>
+                </div>
+                <div className="w-px h-10 bg-white/20"></div>
+                <div className="text-center">
+                  <p className="text-xs uppercase opacity-70 font-bold mb-1">Loans & Advances</p>
+                  <p className="text-xl font-bold">{formatBalance(highlightCards.find(c => c.label === "Loans & Advances")?.value)}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Highlight Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
             {highlightCards.map((card, idx) => {

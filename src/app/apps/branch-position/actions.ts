@@ -58,14 +58,17 @@ export async function saveSettings(settings: { gl: any[], pl: any[] }) {
   revalidatePath("/apps/branch-position/settings")
 }
 
-export async function fetchAmountByDescription(description: string, type: "GL" | "PL", date?: Date) {
-  // ... (keep the existing word-based matching logic)
+export async function fetchAmountByDescription(description: string, type: "GL" | "PL", date?: Date, branchCode?: string) {
   const session = await auth()
   if (!session?.user?.id) throw new Error("Unauthorized")
 
   const where: any = {
     userId: session.user.id,
     type: type
+  }
+
+  if (branchCode) {
+    where.branchCode = branchCode
   }
 
   if (date) {
@@ -93,23 +96,20 @@ export async function fetchAmountByDescription(description: string, type: "GL" |
     const content = await readFile(filePath, "utf-8")
     const lines = content.split("\n")
     
+    const searchWords = description.trim().toLowerCase().split(/\s+/).filter(w => w.length > 0)
+    
     for (const line of lines) {
       if (line.startsWith("====>")) {
         const lowerLine = line.toLowerCase()
-        const searchWords = description.trim().toLowerCase().split(/\s+/).filter(w => w.length > 0)
-        
-        // Check if all words from the search description are present in the line
         const allWordsMatch = searchWords.every(word => lowerLine.includes(word))
         
         if (allWordsMatch && searchWords.length > 0) {
-          // Find the balance by looking for the last segment of the line that looks like a number
           const segments = line.trim().split(/\s+/)
           const lastSegment = segments[segments.length - 1]
           
           if (/[\d,.-]+/.test(lastSegment)) {
             return lastSegment
           }
-          return line.substring(66).trim()
         }
       }
     }
@@ -120,34 +120,34 @@ export async function fetchAmountByDescription(description: string, type: "GL" |
   return "0.00"
 }
 
-export async function getLatestData() {
+export async function getLatestData(branchCode?: string) {
   const settings = await getSettings()
   
   const glResults = await Promise.all((settings.gl || []).map(async (row: any) => {
-    const amount = row.description ? await fetchAmountByDescription(row.description, "GL") : "0.00"
+    const amount = row.description ? await fetchAmountByDescription(row.description, "GL", undefined, branchCode) : "0.00"
     return { ...row, amount }
   }))
 
   const plResults = await Promise.all((settings.pl || []).map(async (row: any) => {
-    const amount = row.description ? await fetchAmountByDescription(row.description, "PL") : "0.00"
+    const amount = row.description ? await fetchAmountByDescription(row.description, "PL", undefined, branchCode) : "0.00"
     return { ...row, amount }
   }))
 
   return { gl: glResults, pl: plResults }
 }
 
-export async function getComparisonData(date1: string, date2: string) {
+export async function getComparisonData(date1: string, date2: string, branchCode?: string) {
   const settings = await getSettings()
 
   const glResults = await Promise.all((settings.gl || []).map(async (row: any) => {
-    const amount1 = row.description ? await fetchAmountByDescription(row.description, "GL", new Date(date1)) : "0.00"
-    const amount2 = row.description ? await fetchAmountByDescription(row.description, "GL", new Date(date2)) : "0.00"
+    const amount1 = row.description ? await fetchAmountByDescription(row.description, "GL", new Date(date1), branchCode) : "0.00"
+    const amount2 = row.description ? await fetchAmountByDescription(row.description, "GL", new Date(date2), branchCode) : "0.00"
     return { ...row, date1: amount1, date2: amount2 }
   }))
 
   const plResults = await Promise.all((settings.pl || []).map(async (row: any) => {
-    const amount1 = row.description ? await fetchAmountByDescription(row.description, "PL", new Date(date1)) : "0.00"
-    const amount2 = row.description ? await fetchAmountByDescription(row.description, "PL", new Date(date2)) : "0.00"
+    const amount1 = row.description ? await fetchAmountByDescription(row.description, "PL", new Date(date1), branchCode) : "0.00"
+    const amount2 = row.description ? await fetchAmountByDescription(row.description, "PL", new Date(date2), branchCode) : "0.00"
     return { ...row, date1: amount1, date2: amount2 }
   }))
 
