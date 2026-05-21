@@ -50,14 +50,14 @@ export default async function Home() {
           
           <div className="pt-4 border-t border-gray-100">
             <p className="text-xs text-gray-400 uppercase tracking-widest font-semibold">
-              Powered by SQLite & Auth.js
+              Presented to you by Md. Rashel Miah
             </p>
           </div>
         </div>
       </div>
 
       <footer className="mt-12 text-gray-400 text-sm">
-        &copy; {new Date().getFullYear()} App Portal. 100% Free & Self-Hosted.
+        &copy; {new Date().getFullYear()} App Portal.
       </footer>
     </div>
   );

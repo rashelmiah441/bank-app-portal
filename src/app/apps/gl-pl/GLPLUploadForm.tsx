@@ -9,15 +9,16 @@ export default function GLPLUploadForm() {
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
+    const form = event.currentTarget
     setIsUploading(true)
     setMessage(null)
 
-    const formData = new FormData(event.currentTarget)
+    const formData = new FormData(form)
     
     try {
       await uploadFile(formData)
       setMessage({ type: "success", text: "File uploaded successfully!" })
-      event.currentTarget.reset()
+      form.reset()
     } catch (error) {
       setMessage({ type: "error", text: error instanceof Error ? error.message : "Upload failed" })
     } finally {
