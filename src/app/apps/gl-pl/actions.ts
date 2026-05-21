@@ -18,6 +18,12 @@ export async function uploadFile(formData: FormData) {
     throw new Error("Missing required fields")
   }
 
+  // Check file size (10MB limit)
+  const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB in bytes
+  if (file.size > MAX_FILE_SIZE) {
+    throw new Error("File is too large. Maximum allowed size is 10MB.")
+  }
+
   const bytes = await file.arrayBuffer()
   const buffer = Buffer.from(bytes)
 
