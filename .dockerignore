@@ -5,7 +5,6 @@ node_modules
 *.db
 *.db-journal
 uploads
-scripts
 README.md
 Dockerfile
 docker-compose.yml
