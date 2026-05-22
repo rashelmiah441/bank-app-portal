@@ -91,7 +91,7 @@ export default function BranchForm({ initialData, onSuccess, onCancel }: BranchF
           <label className="block text-xs font-bold text-gray-500 uppercase tracking-wider">Branch Code</label>
           <input 
             name="branchCode" 
-            defaultValue={initialData?.branchCode}
+            defaultValue={initialData?.branchCode ?? undefined}
             placeholder="e.g. 0101"
             required 
             className="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all outline-none" 
@@ -101,7 +101,7 @@ export default function BranchForm({ initialData, onSuccess, onCancel }: BranchF
           <label className="block text-xs font-bold text-gray-500 uppercase tracking-wider">Routing Number</label>
           <input 
             name="routingNumber" 
-            defaultValue={initialData?.routingNumber}
+            defaultValue={initialData?.routingNumber ?? undefined}
             placeholder="9-digit number"
             className="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all outline-none" 
           />
@@ -110,7 +110,7 @@ export default function BranchForm({ initialData, onSuccess, onCancel }: BranchF
           <label className="block text-xs font-bold text-gray-500 uppercase tracking-wider">Phone Number</label>
           <input 
             name="phoneNumber" 
-            defaultValue={initialData?.phoneNumber}
+            defaultValue={initialData?.phoneNumber ?? undefined}
             placeholder="Contact number"
             className="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all outline-none" 
           />

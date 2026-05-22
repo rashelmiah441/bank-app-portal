@@ -12,7 +12,7 @@ interface PrintPageProps {
 
 export default async function PrintPage({ params, searchParams }: PrintPageProps) {
   const session = await auth()
-  if (!session) redirect("/api/auth/signin")
+  if (!session?.user?.id) redirect("/api/auth/signin")
 
   const { id } = await params
   const type = (await searchParams).type || "short"

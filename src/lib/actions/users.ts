@@ -121,9 +121,11 @@ export async function updateUser(userId: string, formData: FormData) {
 
 export async function deleteUser(userId: string) {
   const session = await auth()
-  if ((session?.user as any)?.role !== "ADMIN") return { error: "Unauthorized" }
+  if (!session?.user?.id || (session.user as any)?.role !== "ADMIN") {
+    return { error: "Unauthorized" }
+  }
 
-  if (userId === session.user?.id) return { error: "Cannot delete yourself" }
+  if (userId === session.user.id) return { error: "Cannot delete yourself" }
 
   try {
     await prisma.user.delete({
