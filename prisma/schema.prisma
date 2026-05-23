@@ -24,6 +24,19 @@ model User {
   appData       AppData[]
   tasks         Task[]
   fileUploads   FileUpload[]
+  exciseDuties  ExciseDuty[]
+}
+
+model ExciseDuty {
+  id         String   @id @default(cuid())
+  userId     String
+  fromAmount Float
+  toAmount   Float
+  dutyAmount Float
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model Task {

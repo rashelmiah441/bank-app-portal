@@ -77,6 +77,51 @@ export default async function Dashboard() {
         </Link>
 
         <Link
+          href="/apps/fdr-calculator"
+          className="group p-6 bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-pink-500 transition-all"
+        >
+          <div className="flex items-center justify-between mb-4">
+            <div className="p-3 bg-pink-50 rounded-lg group-hover:bg-pink-100 transition-colors">
+              <svg className="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+              </svg>
+            </div>
+          </div>
+          <h3 className="text-lg font-semibold text-gray-900">FDR Calculator</h3>
+          <p className="mt-2 text-sm text-gray-500">Calculate maturity amount and interest earned on your fixed deposits.</p>
+        </Link>
+
+        <Link
+          href="/apps/excise-duty"
+          className="group p-6 bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-emerald-500 transition-all"
+        >
+          <div className="flex items-center justify-between mb-4">
+            <div className="p-3 bg-emerald-50 rounded-lg group-hover:bg-emerald-100 transition-colors">
+              <svg className="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.407 2.67 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.407-2.67-1M12 16v1m4-12H8a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2z" />
+              </svg>
+            </div>
+          </div>
+          <h3 className="text-lg font-semibold text-gray-900">Excise Duty</h3>
+          <p className="mt-2 text-sm text-gray-500">Manage and save your excise duty ranges and applicable fees.</p>
+        </Link>
+
+        <Link
+          href="/apps/abs-calculator"
+          className="group p-6 bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-yellow-500 transition-all"
+        >
+          <div className="flex items-center justify-between mb-4">
+            <div className="p-3 bg-yellow-50 rounded-lg group-hover:bg-yellow-100 transition-colors">
+              <svg className="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+              </svg>
+            </div>
+          </div>
+          <h3 className="text-lg font-semibold text-gray-900">ABS (DPS) Calculator</h3>
+          <p className="mt-2 text-sm text-gray-500">Calculate Deposit Pension Scheme (DPS) maturity and interest returns.</p>
+        </Link>
+
+        <Link
           href="/apps/settings"
           className="group p-6 bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-indigo-500 transition-all"
         >
