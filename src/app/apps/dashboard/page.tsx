@@ -122,6 +122,36 @@ export default async function Dashboard() {
         </Link>
 
         <Link
+          href="/apps/branch-logo-generator"
+          className="group p-6 bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-red-500 transition-all"
+        >
+          <div className="flex items-center justify-between mb-4">
+            <div className="p-3 bg-red-50 rounded-lg group-hover:bg-red-100 transition-colors">
+              <svg className="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </div>
+          </div>
+          <h3 className="text-lg font-semibold text-gray-900">Branch Logo Generator</h3>
+          <p className="mt-2 text-sm text-gray-500">Generate A4 size branch logos with Agrani PLC branding and branch info.</p>
+        </Link>
+
+        <Link
+          href="/apps/letters"
+          className="group p-6 bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-amber-500 transition-all"
+        >
+          <div className="flex items-center justify-between mb-4">
+            <div className="p-3 bg-amber-50 rounded-lg group-hover:bg-amber-100 transition-colors">
+              <svg className="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+          </div>
+          <h3 className="text-lg font-semibold text-gray-900">Letters App</h3>
+          <p className="mt-2 text-sm text-gray-500">Create, search, and manage your letters with a dedicated storage.</p>
+        </Link>
+
+        <Link
           href="/apps/settings"
           className="group p-6 bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-indigo-500 transition-all"
         >

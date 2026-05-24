@@ -25,6 +25,33 @@ model User {
   tasks         Task[]
   fileUploads   FileUpload[]
   exciseDuties  ExciseDuty[]
+  letters       Letter[]
+  savedRecipients SavedRecipient[]
+}
+
+model SavedRecipient {
+  id        String   @id @default(cuid())
+  userId    String
+  name      String   // A short label, e.g., "DGM Narsingdi"
+  address   String   // The full multi-line address
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Letter {
+  id        String   @id @default(cuid())
+  userId    String
+  title     String
+  content   String
+  letterNo  String?
+  recipient String?
+  language  String   @default("EN")
+  date      DateTime @default(now())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model ExciseDuty {
