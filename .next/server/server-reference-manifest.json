@@ -1,0 +1,768 @@
+{
+  "node": {
+    "0062829d80d7fa6decf1735a705d5bc956b3e87e59": {
+      "workers": {
+        "app/apps/abs-calculator/page": {
+          "moduleId": 77930,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        },
+        "app/apps/admin/branches/page": {
+          "moduleId": 46408,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        },
+        "app/apps/admin/users/page": {
+          "moduleId": 29236,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        },
+        "app/apps/branch-logo-generator/page": {
+          "moduleId": 92612,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        },
+        "app/apps/branch-position/compare/page": {
+          "moduleId": 7398,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        },
+        "app/apps/branch-position/latest/page": {
+          "moduleId": 80008,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        },
+        "app/apps/branch-position/page": {
+          "moduleId": 70720,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        },
+        "app/apps/branch-position/settings/page": {
+          "moduleId": 41377,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        },
+        "app/apps/dashboard/page": {
+          "moduleId": 34711,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        },
+        "app/apps/excise-duty/page": {
+          "moduleId": 73824,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        },
+        "app/apps/fdr-calculator/page": {
+          "moduleId": 27702,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        },
+        "app/apps/gl-pl/page": {
+          "moduleId": 95485,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        },
+        "app/apps/gl-pl/print/[id]/page": {
+          "moduleId": 61492,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        },
+        "app/apps/letters/[id]/page": {
+          "moduleId": 79560,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        },
+        "app/apps/letters/new/page": {
+          "moduleId": 99415,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        },
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        },
+        "app/apps/notes/page": {
+          "moduleId": 11110,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        },
+        "app/apps/settings/page": {
+          "moduleId": 36635,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        },
+        "app/apps/tasks/page": {
+          "moduleId": 72087,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        }
+      },
+      "filename": "src/app/apps/layout.tsx",
+      "exportedName": "$$RSC_SERVER_ACTION_0"
+    },
+    "004937471985103f983c72955df99252e318cbb66b": {
+      "workers": {
+        "app/apps/abs-calculator/page": {
+          "moduleId": 77930,
+          "async": false,
+          "exportedName": "getExciseDuties",
+          "filename": "src/app/apps/excise-duty/actions.ts"
+        },
+        "app/apps/excise-duty/page": {
+          "moduleId": 73824,
+          "async": false,
+          "exportedName": "getExciseDuties",
+          "filename": "src/app/apps/excise-duty/actions.ts"
+        },
+        "app/apps/fdr-calculator/page": {
+          "moduleId": 27702,
+          "async": false,
+          "exportedName": "getExciseDuties",
+          "filename": "src/app/apps/excise-duty/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/excise-duty/actions.ts",
+      "exportedName": "getExciseDuties"
+    },
+    "4090e87e9620a15317844eaf24b5760d8959dbb47c": {
+      "workers": {
+        "app/apps/admin/branches/page": {
+          "moduleId": 46408,
+          "async": false,
+          "exportedName": "createBranch",
+          "filename": "src/app/apps/admin/branches/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/admin/branches/actions.ts",
+      "exportedName": "createBranch"
+    },
+    "601792f213b199aed620ebcf22d551db1d37d0566f": {
+      "workers": {
+        "app/apps/admin/branches/page": {
+          "moduleId": 46408,
+          "async": false,
+          "exportedName": "updateBranch",
+          "filename": "src/app/apps/admin/branches/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/admin/branches/actions.ts",
+      "exportedName": "updateBranch"
+    },
+    "704963f8f36386e3ffb3abf1b2b1b5c0c782d5ad96": {
+      "workers": {
+        "app/apps/admin/branches/page": {
+          "moduleId": 46408,
+          "async": false,
+          "exportedName": "getBranches",
+          "filename": "src/app/apps/admin/branches/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/admin/branches/actions.ts",
+      "exportedName": "getBranches"
+    },
+    "404a3a34e0d35bf96c869e676c1fa6c100e342d86e": {
+      "workers": {
+        "app/apps/admin/branches/page": {
+          "moduleId": 46408,
+          "async": false,
+          "exportedName": "deleteBranch",
+          "filename": "src/app/apps/admin/branches/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/admin/branches/actions.ts",
+      "exportedName": "deleteBranch"
+    },
+    "407913f1c85232d75b14d16cb3678d710e9c87dd03": {
+      "workers": {
+        "app/apps/admin/branches/page": {
+          "moduleId": 46408,
+          "async": false,
+          "exportedName": "uploadBranchesExcel",
+          "filename": "src/app/apps/admin/branches/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/admin/branches/actions.ts",
+      "exportedName": "uploadBranchesExcel"
+    },
+    "00de09a53e8d11cc502fb34a6b94fc3692ce4fc57f": {
+      "workers": {
+        "app/apps/admin/users/page": {
+          "moduleId": 29236,
+          "async": false,
+          "exportedName": "getAllUsers",
+          "filename": "src/lib/actions/users.ts"
+        }
+      },
+      "filename": "src/lib/actions/users.ts",
+      "exportedName": "getAllUsers"
+    },
+    "400e34348fc1c2cfc941320422834c2911943e912d": {
+      "workers": {
+        "app/apps/admin/users/page": {
+          "moduleId": 29236,
+          "async": false,
+          "exportedName": "deleteUser",
+          "filename": "src/lib/actions/users.ts"
+        }
+      },
+      "filename": "src/lib/actions/users.ts",
+      "exportedName": "deleteUser"
+    },
+    "40c0e600fb7d0a6da4589978c7003788dbd8ed227b": {
+      "workers": {
+        "app/apps/admin/users/page": {
+          "moduleId": 29236,
+          "async": false,
+          "exportedName": "updateCurrentUser",
+          "filename": "src/lib/actions/users.ts"
+        },
+        "app/apps/settings/page": {
+          "moduleId": 36635,
+          "async": false,
+          "exportedName": "updateCurrentUser",
+          "filename": "src/lib/actions/users.ts"
+        }
+      },
+      "filename": "src/lib/actions/users.ts",
+      "exportedName": "updateCurrentUser"
+    },
+    "40cc19180fbfcfc393ff65152f2e0fc52bb5a11cac": {
+      "workers": {
+        "app/apps/admin/users/page": {
+          "moduleId": 29236,
+          "async": false,
+          "exportedName": "createUser",
+          "filename": "src/lib/actions/users.ts"
+        }
+      },
+      "filename": "src/lib/actions/users.ts",
+      "exportedName": "createUser"
+    },
+    "60bb9a4a27707a73373ab9bcc3b122b7ec272ad079": {
+      "workers": {
+        "app/apps/admin/users/page": {
+          "moduleId": 29236,
+          "async": false,
+          "exportedName": "updateUser",
+          "filename": "src/lib/actions/users.ts"
+        }
+      },
+      "filename": "src/lib/actions/users.ts",
+      "exportedName": "updateUser"
+    },
+    "70ceaffa387ccd3702fcfd15c567f297e8e4ef349d": {
+      "workers": {
+        "app/apps/branch-position/compare/page": {
+          "moduleId": 7398,
+          "async": false,
+          "exportedName": "getComparisonData",
+          "filename": "src/app/apps/branch-position/actions.ts"
+        },
+        "app/apps/branch-position/latest/page": {
+          "moduleId": 80008,
+          "async": false,
+          "exportedName": "getComparisonData",
+          "filename": "src/app/apps/branch-position/actions.ts"
+        },
+        "app/apps/branch-position/settings/page": {
+          "moduleId": 41377,
+          "async": false,
+          "exportedName": "getComparisonData",
+          "filename": "src/app/apps/branch-position/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/branch-position/actions.ts",
+      "exportedName": "getComparisonData"
+    },
+    "00ffbe513a864ed12eccf8a46d36587b303c87079c": {
+      "workers": {
+        "app/apps/branch-position/latest/page": {
+          "moduleId": 80008,
+          "async": false,
+          "exportedName": "getSettings",
+          "filename": "src/app/apps/branch-position/actions.ts"
+        },
+        "app/apps/branch-position/settings/page": {
+          "moduleId": 41377,
+          "async": false,
+          "exportedName": "getSettings",
+          "filename": "src/app/apps/branch-position/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/branch-position/actions.ts",
+      "exportedName": "getSettings"
+    },
+    "40c5ae1fc952a5850e5fd08cea8ac5906518d42ac2": {
+      "workers": {
+        "app/apps/branch-position/latest/page": {
+          "moduleId": 80008,
+          "async": false,
+          "exportedName": "saveSettings",
+          "filename": "src/app/apps/branch-position/actions.ts"
+        },
+        "app/apps/branch-position/settings/page": {
+          "moduleId": 41377,
+          "async": false,
+          "exportedName": "saveSettings",
+          "filename": "src/app/apps/branch-position/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/branch-position/actions.ts",
+      "exportedName": "saveSettings"
+    },
+    "40ceb01e20cfbf7752b78bafff9ff9452af65e39db": {
+      "workers": {
+        "app/apps/branch-position/latest/page": {
+          "moduleId": 80008,
+          "async": false,
+          "exportedName": "getLatestData",
+          "filename": "src/app/apps/branch-position/actions.ts"
+        },
+        "app/apps/branch-position/settings/page": {
+          "moduleId": 41377,
+          "async": false,
+          "exportedName": "getLatestData",
+          "filename": "src/app/apps/branch-position/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/branch-position/actions.ts",
+      "exportedName": "getLatestData"
+    },
+    "78b0766d0d9f5c218e0aa425ddf0abd76e10d9e820": {
+      "workers": {
+        "app/apps/branch-position/latest/page": {
+          "moduleId": 80008,
+          "async": false,
+          "exportedName": "fetchAmountByDescription",
+          "filename": "src/app/apps/branch-position/actions.ts"
+        },
+        "app/apps/branch-position/settings/page": {
+          "moduleId": 41377,
+          "async": false,
+          "exportedName": "fetchAmountByDescription",
+          "filename": "src/app/apps/branch-position/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/branch-position/actions.ts",
+      "exportedName": "fetchAmountByDescription"
+    },
+    "40dbf3e5984bb16561ad38987eac06c907589dc722": {
+      "workers": {
+        "app/apps/excise-duty/page": {
+          "moduleId": 73824,
+          "async": false,
+          "exportedName": "createExciseDuty",
+          "filename": "src/app/apps/excise-duty/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/excise-duty/actions.ts",
+      "exportedName": "createExciseDuty"
+    },
+    "6072f93fb564a31a1007b2db7f9759ba2340e2e9d7": {
+      "workers": {
+        "app/apps/excise-duty/page": {
+          "moduleId": 73824,
+          "async": false,
+          "exportedName": "updateExciseDuty",
+          "filename": "src/app/apps/excise-duty/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/excise-duty/actions.ts",
+      "exportedName": "updateExciseDuty"
+    },
+    "406871b6e4b748eff398da0469b0033e4e7cbcb38b": {
+      "workers": {
+        "app/apps/excise-duty/page": {
+          "moduleId": 73824,
+          "async": false,
+          "exportedName": "deleteExciseDuty",
+          "filename": "src/app/apps/excise-duty/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/excise-duty/actions.ts",
+      "exportedName": "deleteExciseDuty"
+    },
+    "409af8343c92c401e15b89dce89449170f11d310b9": {
+      "workers": {
+        "app/apps/gl-pl/page": {
+          "moduleId": 95485,
+          "async": false,
+          "exportedName": "uploadFile",
+          "filename": "src/app/apps/gl-pl/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/gl-pl/actions.ts",
+      "exportedName": "uploadFile"
+    },
+    "40cb06fc46106789d13427ef8c67076dea5de22b13": {
+      "workers": {
+        "app/apps/gl-pl/page": {
+          "moduleId": 95485,
+          "async": false,
+          "exportedName": "deleteUpload",
+          "filename": "src/app/apps/gl-pl/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/gl-pl/actions.ts",
+      "exportedName": "deleteUpload"
+    },
+    "00cc3b433e1d130308bddc093dee199bb9efa5a0e3": {
+      "workers": {
+        "app/apps/gl-pl/page": {
+          "moduleId": 95485,
+          "async": false,
+          "exportedName": "getUploads",
+          "filename": "src/app/apps/gl-pl/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/gl-pl/actions.ts",
+      "exportedName": "getUploads"
+    },
+    "0012badd654cec1e72e290611bd20406814a42fcf1": {
+      "workers": {
+        "app/apps/letters/[id]/page": {
+          "moduleId": 79560,
+          "async": false,
+          "exportedName": "getUserLogo",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/new/page": {
+          "moduleId": 99415,
+          "async": false,
+          "exportedName": "getUserLogo",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "getUserLogo",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/letters/actions.ts",
+      "exportedName": "getUserLogo"
+    },
+    "0076b97e23ec25362796d16139f046a96fc407633e": {
+      "workers": {
+        "app/apps/letters/[id]/page": {
+          "moduleId": 79560,
+          "async": false,
+          "exportedName": "getSavedRecipients",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/new/page": {
+          "moduleId": 99415,
+          "async": false,
+          "exportedName": "getSavedRecipients",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "getSavedRecipients",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/letters/actions.ts",
+      "exportedName": "getSavedRecipients"
+    },
+    "401450f24afb1c75c6c1ace68bc767e7736962208f": {
+      "workers": {
+        "app/apps/letters/[id]/page": {
+          "moduleId": 79560,
+          "async": false,
+          "exportedName": "createLetter",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/new/page": {
+          "moduleId": 99415,
+          "async": false,
+          "exportedName": "createLetter",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "createLetter",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/letters/actions.ts",
+      "exportedName": "createLetter"
+    },
+    "4039659eebb63cdc823149d70acda44e16a3ee34ae": {
+      "workers": {
+        "app/apps/letters/[id]/page": {
+          "moduleId": 79560,
+          "async": false,
+          "exportedName": "getLetters",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/new/page": {
+          "moduleId": 99415,
+          "async": false,
+          "exportedName": "getLetters",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "getLetters",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/letters/actions.ts",
+      "exportedName": "getLetters"
+    },
+    "404c732474a601cb65cf834c486c97f4d1333d3e59": {
+      "workers": {
+        "app/apps/letters/[id]/page": {
+          "moduleId": 79560,
+          "async": false,
+          "exportedName": "createSavedRecipient",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/new/page": {
+          "moduleId": 99415,
+          "async": false,
+          "exportedName": "createSavedRecipient",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "createSavedRecipient",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/letters/actions.ts",
+      "exportedName": "createSavedRecipient"
+    },
+    "4077f4deb2e4459aa846d84c74212108f89c4a92a9": {
+      "workers": {
+        "app/apps/letters/[id]/page": {
+          "moduleId": 79560,
+          "async": false,
+          "exportedName": "deleteSavedRecipient",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/new/page": {
+          "moduleId": 99415,
+          "async": false,
+          "exportedName": "deleteSavedRecipient",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "deleteSavedRecipient",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/letters/actions.ts",
+      "exportedName": "deleteSavedRecipient"
+    },
+    "4098a0334dcd43abf23b73f0a66f5b287192f76acf": {
+      "workers": {
+        "app/apps/letters/[id]/page": {
+          "moduleId": 79560,
+          "async": false,
+          "exportedName": "saveUserLogo",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/new/page": {
+          "moduleId": 99415,
+          "async": false,
+          "exportedName": "saveUserLogo",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "saveUserLogo",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/letters/actions.ts",
+      "exportedName": "saveUserLogo"
+    },
+    "40a3df191094c3e077f694053af7fc40a11e1b8372": {
+      "workers": {
+        "app/apps/letters/[id]/page": {
+          "moduleId": 79560,
+          "async": false,
+          "exportedName": "deleteLetter",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/new/page": {
+          "moduleId": 99415,
+          "async": false,
+          "exportedName": "deleteLetter",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "deleteLetter",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/letters/actions.ts",
+      "exportedName": "deleteLetter"
+    },
+    "40ad7dcca6576546fe0e89cd3e492067e3a0c05168": {
+      "workers": {
+        "app/apps/letters/[id]/page": {
+          "moduleId": 79560,
+          "async": false,
+          "exportedName": "getLetterById",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/new/page": {
+          "moduleId": 99415,
+          "async": false,
+          "exportedName": "getLetterById",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "getLetterById",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/letters/actions.ts",
+      "exportedName": "getLetterById"
+    },
+    "60406968eeeb6469c99d806ea74eacbceae28f800b": {
+      "workers": {
+        "app/apps/letters/[id]/page": {
+          "moduleId": 79560,
+          "async": false,
+          "exportedName": "updateSavedRecipient",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/new/page": {
+          "moduleId": 99415,
+          "async": false,
+          "exportedName": "updateSavedRecipient",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "updateSavedRecipient",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/letters/actions.ts",
+      "exportedName": "updateSavedRecipient"
+    },
+    "60910fa85a238abd11b3d0a72a87f90d5b752bb82e": {
+      "workers": {
+        "app/apps/letters/[id]/page": {
+          "moduleId": 79560,
+          "async": false,
+          "exportedName": "updateLetter",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/new/page": {
+          "moduleId": 99415,
+          "async": false,
+          "exportedName": "updateLetter",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "updateLetter",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/letters/actions.ts",
+      "exportedName": "updateLetter"
+    },
+    "408de5dd4169a7dede1ac0148b1775e622e923256d": {
+      "workers": {
+        "app/apps/notes/page": {
+          "moduleId": 11110,
+          "async": false,
+          "exportedName": "saveNote",
+          "filename": "src/app/apps/notes/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/notes/actions.ts",
+      "exportedName": "saveNote"
+    },
+    "00c6a9b6568d36b752c80d3651af244d81125eb0a9": {
+      "workers": {
+        "app/apps/tasks/page": {
+          "moduleId": 72087,
+          "async": false,
+          "exportedName": "getTasks",
+          "filename": "src/app/apps/tasks/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/tasks/actions.ts",
+      "exportedName": "getTasks"
+    },
+    "400c36988508defe3f09418fb99b774373ab24c110": {
+      "workers": {
+        "app/apps/tasks/page": {
+          "moduleId": 72087,
+          "async": false,
+          "exportedName": "createTask",
+          "filename": "src/app/apps/tasks/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/tasks/actions.ts",
+      "exportedName": "createTask"
+    },
+    "407abdd0b5eafb5735ac4146f1895fe92d5a086ec9": {
+      "workers": {
+        "app/apps/tasks/page": {
+          "moduleId": 72087,
+          "async": false,
+          "exportedName": "deleteTask",
+          "filename": "src/app/apps/tasks/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/tasks/actions.ts",
+      "exportedName": "deleteTask"
+    },
+    "60e2aa9da15d2f427c4b23b506a016176baaa41241": {
+      "workers": {
+        "app/apps/tasks/page": {
+          "moduleId": 72087,
+          "async": false,
+          "exportedName": "updateTask",
+          "filename": "src/app/apps/tasks/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/tasks/actions.ts",
+      "exportedName": "updateTask"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "vLQoEpe3JqJMexLGDgsIet52uPwMEsbDLsSnUIERkP4="
+}

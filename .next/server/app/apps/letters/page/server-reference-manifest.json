@@ -1,0 +1,149 @@
+{
+  "node": {
+    "0062829d80d7fa6decf1735a705d5bc956b3e87e59": {
+      "workers": {
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        }
+      },
+      "exportedName": "$$RSC_SERVER_ACTION_0",
+      "filename": "src/app/apps/layout.tsx"
+    },
+    "0012badd654cec1e72e290611bd20406814a42fcf1": {
+      "workers": {
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "getUserLogo",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "exportedName": "getUserLogo",
+      "filename": "src/app/apps/letters/actions.ts"
+    },
+    "0076b97e23ec25362796d16139f046a96fc407633e": {
+      "workers": {
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "getSavedRecipients",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "exportedName": "getSavedRecipients",
+      "filename": "src/app/apps/letters/actions.ts"
+    },
+    "401450f24afb1c75c6c1ace68bc767e7736962208f": {
+      "workers": {
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "createLetter",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "exportedName": "createLetter",
+      "filename": "src/app/apps/letters/actions.ts"
+    },
+    "4039659eebb63cdc823149d70acda44e16a3ee34ae": {
+      "workers": {
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "getLetters",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "exportedName": "getLetters",
+      "filename": "src/app/apps/letters/actions.ts"
+    },
+    "404c732474a601cb65cf834c486c97f4d1333d3e59": {
+      "workers": {
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "createSavedRecipient",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "exportedName": "createSavedRecipient",
+      "filename": "src/app/apps/letters/actions.ts"
+    },
+    "4077f4deb2e4459aa846d84c74212108f89c4a92a9": {
+      "workers": {
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "deleteSavedRecipient",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "exportedName": "deleteSavedRecipient",
+      "filename": "src/app/apps/letters/actions.ts"
+    },
+    "4098a0334dcd43abf23b73f0a66f5b287192f76acf": {
+      "workers": {
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "saveUserLogo",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "exportedName": "saveUserLogo",
+      "filename": "src/app/apps/letters/actions.ts"
+    },
+    "40a3df191094c3e077f694053af7fc40a11e1b8372": {
+      "workers": {
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "deleteLetter",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "exportedName": "deleteLetter",
+      "filename": "src/app/apps/letters/actions.ts"
+    },
+    "40ad7dcca6576546fe0e89cd3e492067e3a0c05168": {
+      "workers": {
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "getLetterById",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "exportedName": "getLetterById",
+      "filename": "src/app/apps/letters/actions.ts"
+    },
+    "60406968eeeb6469c99d806ea74eacbceae28f800b": {
+      "workers": {
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "updateSavedRecipient",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "exportedName": "updateSavedRecipient",
+      "filename": "src/app/apps/letters/actions.ts"
+    },
+    "60910fa85a238abd11b3d0a72a87f90d5b752bb82e": {
+      "workers": {
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "updateLetter",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "exportedName": "updateLetter",
+      "filename": "src/app/apps/letters/actions.ts"
+    }
+  },
+  "edge": {}
+}

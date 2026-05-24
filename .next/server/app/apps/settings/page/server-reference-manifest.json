@@ -1,0 +1,29 @@
+{
+  "node": {
+    "0062829d80d7fa6decf1735a705d5bc956b3e87e59": {
+      "workers": {
+        "app/apps/settings/page": {
+          "moduleId": 36635,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        }
+      },
+      "exportedName": "$$RSC_SERVER_ACTION_0",
+      "filename": "src/app/apps/layout.tsx"
+    },
+    "40c0e600fb7d0a6da4589978c7003788dbd8ed227b": {
+      "workers": {
+        "app/apps/settings/page": {
+          "moduleId": 36635,
+          "async": false,
+          "exportedName": "updateCurrentUser",
+          "filename": "src/lib/actions/users.ts"
+        }
+      },
+      "exportedName": "updateCurrentUser",
+      "filename": "src/lib/actions/users.ts"
+    }
+  },
+  "edge": {}
+}

@@ -1,0 +1,53 @@
+{
+  "node": {
+    "0062829d80d7fa6decf1735a705d5bc956b3e87e59": {
+      "workers": {
+        "app/apps/gl-pl/page": {
+          "moduleId": 95485,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        }
+      },
+      "exportedName": "$$RSC_SERVER_ACTION_0",
+      "filename": "src/app/apps/layout.tsx"
+    },
+    "409af8343c92c401e15b89dce89449170f11d310b9": {
+      "workers": {
+        "app/apps/gl-pl/page": {
+          "moduleId": 95485,
+          "async": false,
+          "exportedName": "uploadFile",
+          "filename": "src/app/apps/gl-pl/actions.ts"
+        }
+      },
+      "exportedName": "uploadFile",
+      "filename": "src/app/apps/gl-pl/actions.ts"
+    },
+    "40cb06fc46106789d13427ef8c67076dea5de22b13": {
+      "workers": {
+        "app/apps/gl-pl/page": {
+          "moduleId": 95485,
+          "async": false,
+          "exportedName": "deleteUpload",
+          "filename": "src/app/apps/gl-pl/actions.ts"
+        }
+      },
+      "exportedName": "deleteUpload",
+      "filename": "src/app/apps/gl-pl/actions.ts"
+    },
+    "00cc3b433e1d130308bddc093dee199bb9efa5a0e3": {
+      "workers": {
+        "app/apps/gl-pl/page": {
+          "moduleId": 95485,
+          "async": false,
+          "exportedName": "getUploads",
+          "filename": "src/app/apps/gl-pl/actions.ts"
+        }
+      },
+      "exportedName": "getUploads",
+      "filename": "src/app/apps/gl-pl/actions.ts"
+    }
+  },
+  "edge": {}
+}
