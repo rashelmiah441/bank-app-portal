@@ -1,7 +1,7 @@
 #!/bin/sh
 
-# Run migrations
-npx prisma migrate deploy
+# Sync database schema
+npx prisma db push --skip-generate
 
 # Start the application
 node server.js
