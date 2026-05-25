@@ -229,14 +229,14 @@ export default function LetterForm({
             }`}
             style={language === "BN" ? { fontFamily: "'Kalpurush', 'Siyam Rupali', 'SolaimanLipi', sans-serif" } : {}}
           >
-            {/* 1. Header with Logo (Edge-to-Edge + Scaled) */}
-            {logo && (
-              <div className="w-full mb-10 overflow-visible flex justify-center">
-                <img src={logo} alt="Logo" className="w-full h-auto block scale-110 origin-center" />
-              </div>
-            )}
-
             <div className="px-16">
+              {/* 1. Header with Logo (Aligned with Content) */}
+              {logo && (
+                <div className="mb-10 flex justify-start">
+                  <img src={logo} alt="Logo" className="max-w-full h-auto block" />
+                </div>
+              )}
+
               {/* 2. Letter No and Date Row */}
               <div className="flex justify-between items-start mb-8 text-[12pt]">
                 <div>
