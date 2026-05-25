@@ -241,11 +241,11 @@ export default function LetterForm({
               <div className="flex justify-between items-start mb-8 text-[12pt]">
                 <div>
                   {letterNo && (
-                    <p><span className="font-bold">{language === "BN" ? "পত্র নং" : "No"}:</span> <span className="font-semibold">{letterNo}</span></p>
+                    <p><span>{language === "BN" ? "পত্র নং" : "No"}:</span> <span>{letterNo}</span></p>
                   )}
                 </div>
                 <div className="text-right">
-                  <p><span className="font-bold">{language === "BN" ? "তারিখ" : "Date"}:</span> <span className="font-semibold">
+                  <p><span>{language === "BN" ? "তারিখ" : "Date"}:</span> <span>
                     {(() => {
                       const d = new Date(date);
                       const day = String(d.getDate()).padStart(2, '0');
@@ -273,10 +273,11 @@ export default function LetterForm({
               </div>
 
               {/* Subject */}
-              <div className="mb-8 text-[12pt]">
-                <p className="font-bold underline decoration-1 underline-offset-4">
-                  {language === "BN" ? "বিষয়" : "Subject"}: {title}
-                </p>
+              <div className="mb-8 text-[12pt] flex items-start">
+                <span className="whitespace-nowrap mr-2">{language === "BN" ? "বিষয়" : "Subject"}:</span>
+                <span className="border-b border-black pb-0.5 inline-block flex-1 leading-tight">
+                  {title}
+                </span>
               </div>
 
               {/* Body */}
