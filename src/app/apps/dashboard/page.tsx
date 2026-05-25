@@ -10,8 +10,8 @@ export default async function Dashboard() {
     <div className="min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-50 via-gray-50 to-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
-        <div className="text-center mb-12 space-y-4">
-          <div className="inline-block p-3 bg-white rounded-2xl shadow-xl mb-4 border border-blue-50 animate-in zoom-in duration-700">
+        <div className="text-center mb-12 space-y-6">
+          <div className="max-w-4xl mx-auto animate-in zoom-in duration-700">
             <WorldClock />
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">

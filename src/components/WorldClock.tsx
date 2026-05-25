@@ -42,9 +42,8 @@ export default function WorldClock() {
   }
 
   return (
-    <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-200 mb-8">
-      <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">World Clock</h3>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div className="bg-white/80 backdrop-blur-sm p-6 rounded-3xl shadow-xl border border-blue-50/50">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
         {timeZones.map((zone) => (
           <div key={zone.name} className="flex flex-col">
             <span className="text-xs text-gray-500">{zone.name}</span>
