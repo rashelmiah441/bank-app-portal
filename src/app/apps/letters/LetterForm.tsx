@@ -275,7 +275,7 @@ export default function LetterForm({
               {/* Subject */}
               <div className="mb-8 text-[12pt] flex items-start">
                 <span className="whitespace-nowrap mr-2">{language === "BN" ? "বিষয়" : "Subject"}:</span>
-                <span className="border-b border-black pb-0.5 inline-block flex-1 leading-tight">
+                <span className="border-b border-black pb-0.5 inline-block flex-1 leading-tight text-justify">
                   {title}
                 </span>
               </div>
