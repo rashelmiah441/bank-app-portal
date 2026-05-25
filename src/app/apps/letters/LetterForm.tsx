@@ -312,10 +312,22 @@ export default function LetterForm({
                       <select 
                         onChange={(e) => {
                           if (e.target.value) {
-                            setCC(prev => prev ? `${prev}\n${e.target.value}` : e.target.value)
+                            const lines = cc.split('\n').filter(l => l.trim() !== "")
+                            const nextNum = lines.length + 1
+
+                            let numStr = nextNum.toString()
+                            if (language === "BN") {
+                              const banglaDigits: { [key: string]: string } = {
+                                '0':'০','1':'১','2':'২','3':'৩','4':'৪','5':'৫','6':'৬','7':'৭','8':'৮','9':'৯'
+                              }
+                              numStr = numStr.split('').map(d => banglaDigits[d] || d).join('')
+                            }
+
+                            const newEntry = `${numStr}. ${e.target.value}`
+                            setCC(prev => prev ? `${prev}\n${newEntry}` : newEntry)
                           }
                         }}
-                        className="text-xs border border-gray-200 rounded px-2 py-1 outline-none focus:ring-1 focus:ring-blue-500 bg-gray-50 text-gray-600 cursor-pointer"
+                        className="text-xs border border-gray-200 rounded px-2 py-1 outline-none focus:ring-1 focus:ring-purple-500 bg-gray-50 text-gray-600 cursor-pointer"
                       >
                         <option value="">Select Saved CC...</option>
                         {savedCCs.map((c) => (
@@ -414,7 +426,7 @@ export default function LetterForm({
             <div className="flex justify-between items-start mb-4 flex-shrink-0">
               <div>
                 {letterNo && (
-                  <p><span>{language === "BN" ? "পত্র নং" : "No"}:</span> <span>{letterNo}</span></p>
+                  <p><span>{language === "BN" ? "পত্র নং" : "Letter Number"}:</span> <span>{letterNo}</span></p>
                 )}
               </div>
               <div className="text-right">
@@ -464,8 +476,32 @@ export default function LetterForm({
                 <p className="font-bold underline mb-2">
                   {language === "BN" ? "অনুলিপি (সদয় অবগতি ও প্রয়োজনীয় ব্যবস্থা গ্রহনের জন্য):" : "Copy for information and necessary action:"}
                 </p>
-                <div className="whitespace-pre-wrap pl-4">
-                  {cc}
+                <div className="space-y-1">
+                  {cc.split('\n').filter(line => line.trim() !== "").map((line, idx) => {
+                    // Try to separate the number (e.g. "1. " or "১. ") from the address
+                    const match = line.match(/^(\d+|[০-৯]+)\.\s*(.*)/)
+                    if (match) {
+                      let num = match[1]
+                      // If English letter but found Bangla digits, convert to English
+                      if (language === "EN" && /[০-৯]/.test(num)) {
+                        const enDigits: { [key: string]: string } = {
+                          '০':'0','১':'1','২':'2','৩':'3','৪':'4','৫':'5','৬':'6','৭':'7','৮':'8','৯':'9'
+                        }
+                        num = num.split('').map(d => enDigits[d] || d).join('')
+                      }
+                      return (
+                        <div key={idx} className="flex items-start">
+                          <span className="w-6 shrink-0">{num}.</span>
+                          <span className="flex-1 text-justify leading-tight">{match[2]}</span>
+                        </div>
+                      )
+                    }
+                    return (
+                      <div key={idx} className="pl-6 text-justify leading-tight">
+                        {line}
+                      </div>
+                    )
+                  })}
                 </div>
               </div>
             )}
