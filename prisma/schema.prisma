@@ -27,6 +27,17 @@ model User {
   exciseDuties  ExciseDuty[]
   letters       Letter[]
   savedRecipients SavedRecipient[]
+  savedCCs      SavedCC[]
+}
+
+model SavedCC {
+  id        String   @id @default(cuid())
+  userId    String
+  name      String   // A short label, e.g., "GM HR"
+  address   String   // The full multi-line address
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model SavedRecipient {
@@ -43,6 +54,8 @@ model Letter {
   id        String   @id @default(cuid())
   userId    String
   title     String
+  subject   String?
+  cc        String?
   content   String
   letterNo  String?
   recipient String?

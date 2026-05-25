@@ -2,11 +2,13 @@
 import { useState } from "react"
 import Link from "next/link"
 import { useRouter, useSearchParams } from "next/navigation"
-import { saveUserLogo, createSavedRecipient, deleteSavedRecipient, updateSavedRecipient } from "./actions"
+import { saveUserLogo, createSavedRecipient, deleteSavedRecipient, updateSavedRecipient, createSavedCC, deleteSavedCC, updateSavedCC } from "./actions"
 
 type Letter = {
   id: string
   title: string
+  subject: string | null
+  cc: string | null
   content: string
   date: Date
   createdAt: Date
@@ -18,23 +20,34 @@ type SavedRecipient = {
   address: string
 }
 
+type SavedCC = {
+  id: string
+  name: string
+  address: string
+}
+
 export default function LettersList({ 
   initialLetters, 
   initialLogo,
-  initialRecipients
+  initialRecipients,
+  initialCCs
 }: { 
   initialLetters: Letter[], 
   initialLogo: string | null,
-  initialRecipients: SavedRecipient[]
+  initialRecipients: SavedRecipient[],
+  initialCCs: SavedCC[]
 }) {
   const router = useRouter()
   const searchParams = useSearchParams()
   const [query, setQuery] = useState(searchParams.get("q") || "")
   const [logo, setLogo] = useState(initialLogo)
   const [recipients, setRecipients] = useState(initialRecipients)
+  const [ccs, setCCs] = useState(initialCCs)
   const [isUploading, setIsUploading] = useState(false)
   const [isAddingRecipient, setIsAddingRecipient] = useState(false)
+  const [isAddingCC, setIsAddingCC] = useState(false)
   const [editingRecipientId, setEditingRecipientId] = useState<string | null>(null)
+  const [editingCCId, setEditingCCId] = useState<string | null>(null)
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value
@@ -91,6 +104,29 @@ export default function LettersList({
     if (confirm("Delete this saved recipient?")) {
       await deleteSavedRecipient(id)
       setRecipients(recipients.filter(r => r.id !== id))
+    }
+  }
+
+  const handleAddCC = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setIsAddingCC(true)
+    const formData = new FormData(e.currentTarget)
+    await createSavedCC(formData)
+    window.location.reload()
+  }
+
+  const handleUpdateCC = async (e: React.FormEvent<HTMLFormElement>, id: string) => {
+    e.preventDefault()
+    const formData = new FormData(e.currentTarget)
+    await updateSavedCC(id, formData)
+    setEditingCCId(null)
+    window.location.reload()
+  }
+
+  const handleDeleteCC = async (id: string) => {
+    if (confirm("Delete this saved CC?")) {
+      await deleteSavedCC(id)
+      setCCs(ccs.filter(c => c.id !== id))
     }
   }
 
@@ -276,6 +312,120 @@ export default function LettersList({
           </div>
         </div>
 
+        {/* Saved CCs Management */}
+        <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 mb-8">
+          <h2 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+            <svg className="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
+            </svg>
+            Saved CC Addresses
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Add New CC */}
+            <form onSubmit={handleAddCC} className="space-y-4">
+              <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider">Add New CC</h3>
+              <div className="space-y-3">
+                <input
+                  name="name"
+                  type="text"
+                  required
+                  placeholder="Label (e.g. GM HR)"
+                  className="w-full p-2 text-sm border border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-500 outline-none"
+                />
+                <textarea
+                  name="address"
+                  required
+                  placeholder="Full CC Address..."
+                  rows={3}
+                  className="w-full p-2 text-sm border border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-500 outline-none"
+                />
+                <button
+                  type="submit"
+                  disabled={isAddingCC}
+                  className="w-full bg-purple-600 hover:bg-purple-700 text-white py-2 rounded-lg text-sm font-bold transition-colors disabled:bg-purple-300"
+                >
+                  {isAddingCC ? "Saving..." : "Save CC Address"}
+                </button>
+              </div>
+            </form>
+
+            {/* List of CCs */}
+            <div className="space-y-4">
+              <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider">Existing CC Addresses</h3>
+              <div className="max-h-[300px] overflow-y-auto space-y-2 pr-2 border border-gray-50 p-2 rounded-lg">
+                {ccs.length === 0 ? (
+                  <p className="text-sm text-gray-400 italic text-center py-4">No saved CCs yet.</p>
+                ) : (
+                  ccs.map((c) => (
+                    <div key={c.id} className="p-3 bg-gray-50 rounded-lg border border-gray-100 group">
+                      {editingCCId === c.id ? (
+                        <form onSubmit={(e) => handleUpdateCC(e, c.id)} className="space-y-3">
+                          <input
+                            name="name"
+                            type="text"
+                            required
+                            defaultValue={c.name}
+                            className="w-full p-1.5 text-xs border border-gray-200 rounded focus:ring-2 focus:ring-purple-500 outline-none"
+                          />
+                          <textarea
+                            name="address"
+                            required
+                            defaultValue={c.address}
+                            rows={3}
+                            className="w-full p-1.5 text-xs border border-gray-200 rounded focus:ring-2 focus:ring-purple-500 outline-none"
+                          />
+                          <div className="flex gap-2">
+                            <button
+                              type="submit"
+                              className="flex-1 bg-green-600 text-white py-1 px-2 rounded text-[10px] font-bold hover:bg-green-700"
+                            >
+                              Update
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => setEditingCCId(null)}
+                              className="flex-1 bg-gray-200 text-gray-700 py-1 px-2 rounded text-[10px] font-bold hover:bg-gray-300"
+                            >
+                              Cancel
+                            </button>
+                          </div>
+                        </form>
+                      ) : (
+                        <div className="flex items-center justify-between">
+                          <span className="text-sm font-medium text-gray-700">{c.name}</span>
+                          <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button
+                              type="button"
+                              onClick={() => setEditingCCId(c.id)}
+                              className="text-gray-400 hover:text-purple-600 transition-colors"
+                              title="Edit"
+                            >
+                              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                              </svg>
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => handleDeleteCC(c.id)}
+                              className="text-gray-400 hover:text-red-600 transition-colors"
+                              title="Delete"
+                            >
+                              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  ))
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Search */}
         <div className="mb-8">
           <input
@@ -297,7 +447,10 @@ export default function LettersList({
             >
               <div>
                 <h3 className="text-lg font-bold text-gray-900">{letter.title}</h3>
-                <p className="text-sm text-gray-500">
+                {letter.subject && (
+                  <p className="text-xs text-gray-500 line-clamp-1 italic mb-1">{letter.subject}</p>
+                )}
+                <p className="text-sm text-gray-400">
                   {new Date(letter.date).toLocaleDateString("en-US", { 
                     year: 'numeric', 
                     month: 'long', 

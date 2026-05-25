@@ -13,6 +13,7 @@ export async function getLetters(query?: string) {
       userId: session.user.id,
       OR: query ? [
         { title: { contains: query } },
+        { subject: { contains: query } },
         { content: { contains: query } },
       ] : undefined,
     },
@@ -34,6 +35,8 @@ export async function createLetter(formData: FormData) {
   if (!session?.user?.id) throw new Error("Unauthorized")
 
   const title = formData.get("title") as string
+  const subject = formData.get("subject") as string
+  const cc = formData.get("cc") as string
   const content = formData.get("content") as string
   const letterNo = formData.get("letterNo") as string
   const recipient = formData.get("recipient") as string
@@ -41,10 +44,12 @@ export async function createLetter(formData: FormData) {
   const dateStr = formData.get("date") as string
   const date = dateStr ? new Date(dateStr) : new Date()
 
-  await prisma.letter.create({
+  const letter = await prisma.letter.create({
     data: {
       userId: session.user.id,
       title,
+      subject,
+      cc,
       content,
       letterNo,
       recipient,
@@ -54,7 +59,7 @@ export async function createLetter(formData: FormData) {
   })
 
   revalidatePath("/apps/letters")
-  redirect("/apps/letters")
+  return letter
 }
 
 export async function updateLetter(id: string, formData: FormData) {
@@ -62,6 +67,8 @@ export async function updateLetter(id: string, formData: FormData) {
   if (!session?.user?.id) throw new Error("Unauthorized")
 
   const title = formData.get("title") as string
+  const subject = formData.get("subject") as string
+  const cc = formData.get("cc") as string
   const content = formData.get("content") as string
   const letterNo = formData.get("letterNo") as string
   const recipient = formData.get("recipient") as string
@@ -69,10 +76,12 @@ export async function updateLetter(id: string, formData: FormData) {
   const dateStr = formData.get("date") as string
   const date = dateStr ? new Date(dateStr) : undefined
 
-  await prisma.letter.update({
+  const letter = await prisma.letter.update({
     where: { id, userId: session.user.id },
     data: {
       title,
+      subject,
+      cc,
       content,
       letterNo,
       recipient,
@@ -82,7 +91,7 @@ export async function updateLetter(id: string, formData: FormData) {
   })
 
   revalidatePath("/apps/letters")
-  redirect("/apps/letters")
+  return letter
 }
 
 export async function deleteLetter(id: string) {
@@ -195,6 +204,63 @@ export async function deleteSavedRecipient(id: string) {
   if (!session?.user?.id) throw new Error("Unauthorized")
 
   await prisma.savedRecipient.delete({
+    where: { id, userId: session.user.id },
+  })
+
+  revalidatePath("/apps/letters")
+}
+
+export async function getSavedCCs() {
+  const session = await auth()
+  if (!session?.user?.id) throw new Error("Unauthorized")
+
+  return await prisma.savedCC.findMany({
+    where: { userId: session.user.id },
+    orderBy: { name: "asc" },
+  })
+}
+
+export async function createSavedCC(formData: FormData) {
+  const session = await auth()
+  if (!session?.user?.id) throw new Error("Unauthorized")
+
+  const name = formData.get("name") as string
+  const address = formData.get("address") as string
+
+  await prisma.savedCC.create({
+    data: {
+      userId: session.user.id,
+      name,
+      address,
+    },
+  })
+
+  revalidatePath("/apps/letters")
+}
+
+export async function updateSavedCC(id: string, formData: FormData) {
+  const session = await auth()
+  if (!session?.user?.id) throw new Error("Unauthorized")
+
+  const name = formData.get("name") as string
+  const address = formData.get("address") as string
+
+  await prisma.savedCC.update({
+    where: { id, userId: session.user.id },
+    data: {
+      name,
+      address,
+    },
+  })
+
+  revalidatePath("/apps/letters")
+}
+
+export async function deleteSavedCC(id: string) {
+  const session = await auth()
+  if (!session?.user?.id) throw new Error("Unauthorized")
+
+  await prisma.savedCC.delete({
     where: { id, userId: session.user.id },
   })
 

@@ -1,6 +1,6 @@
 {
   "node": {
-    "0062829d80d7fa6decf1735a705d5bc956b3e87e59": {
+    "00a90668bbed8b06aa8e2f1f03f5a8ef24676d1906": {
       "workers": {
         "app/apps/admin/branches/page": {
           "moduleId": 46408,
@@ -12,7 +12,7 @@
       "exportedName": "$$RSC_SERVER_ACTION_0",
       "filename": "src/app/apps/layout.tsx"
     },
-    "4090e87e9620a15317844eaf24b5760d8959dbb47c": {
+    "4056f9bf5175cdd374b1c49da5c035b93bf31309c5": {
       "workers": {
         "app/apps/admin/branches/page": {
           "moduleId": 46408,
@@ -24,7 +24,7 @@
       "exportedName": "createBranch",
       "filename": "src/app/apps/admin/branches/actions.ts"
     },
-    "601792f213b199aed620ebcf22d551db1d37d0566f": {
+    "60f1a9889bbf18bc3205a0f173dcfcbf7a5f1fe41a": {
       "workers": {
         "app/apps/admin/branches/page": {
           "moduleId": 46408,
@@ -36,7 +36,7 @@
       "exportedName": "updateBranch",
       "filename": "src/app/apps/admin/branches/actions.ts"
     },
-    "704963f8f36386e3ffb3abf1b2b1b5c0c782d5ad96": {
+    "707a1cbc8557df05005ea3775535dd5d81e37ce04d": {
       "workers": {
         "app/apps/admin/branches/page": {
           "moduleId": 46408,
@@ -48,7 +48,7 @@
       "exportedName": "getBranches",
       "filename": "src/app/apps/admin/branches/actions.ts"
     },
-    "404a3a34e0d35bf96c869e676c1fa6c100e342d86e": {
+    "40f6946233e50e67af35d5c5ffd1c1ce2f02ef85b8": {
       "workers": {
         "app/apps/admin/branches/page": {
           "moduleId": 46408,
@@ -60,7 +60,7 @@
       "exportedName": "deleteBranch",
       "filename": "src/app/apps/admin/branches/actions.ts"
     },
-    "407913f1c85232d75b14d16cb3678d710e9c87dd03": {
+    "409cf79e8f5b1c82d308b9dbdedf9c60f66b66de65": {
       "workers": {
         "app/apps/admin/branches/page": {
           "moduleId": 46408,

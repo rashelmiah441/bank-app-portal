@@ -1,5 +1,5 @@
 import { auth } from "@/auth"
-import { getLetters, getUserLogo, getSavedRecipients } from "./actions"
+import { getLetters, getUserLogo, getSavedRecipients, getSavedCCs } from "./actions"
 import LettersList from "./LettersList"
 import { redirect } from "next/navigation"
 
@@ -15,11 +15,19 @@ export default async function LettersPage({
   }
 
   const { q } = await searchParams
-  const [letters, logo, savedRecipients] = await Promise.all([
+  const [letters, logo, savedRecipients, savedCCs] = await Promise.all([
     getLetters(q),
     getUserLogo(),
-    getSavedRecipients()
+    getSavedRecipients(),
+    getSavedCCs()
   ])
 
-  return <LettersList initialLetters={letters} initialLogo={logo} initialRecipients={savedRecipients} />
+  return (
+    <LettersList 
+      initialLetters={letters} 
+      initialLogo={logo} 
+      initialRecipients={savedRecipients} 
+      initialCCs={savedCCs}
+    />
+  )
 }
