@@ -32,7 +32,7 @@ interface QuarterReport {
     closingBalance: number;
 }
 
-export default function AutoSmeCcClient({ initialHistory }: { initialHistory: HistoryRecord[] }) {
+export default function AutoSmeCcClient({ initialHistory }: { initialHistory: any[] }) {
   const [calculateUpTo, setCalculateUpTo] = useState<string>(new Date().toISOString().split('T')[0]);
   const [bankName, setBankName] = useState("");
   const [branchName, setBranchName] = useState("");
@@ -48,6 +48,20 @@ export default function AutoSmeCcClient({ initialHistory }: { initialHistory: Hi
     contentRef: printRef,
     documentTitle: "SME CC Automatic Interest Calculation",
   });
+
+  const formatCurrency = (val: number) => {
+    if (val === 0) return "0.00";
+    const sign = val < 0 ? "-" : "";
+    const [intPart, decPart] = Math.abs(val).toFixed(2).split('.');
+    if (intPart.length <= 3) return sign + intPart + "." + decPart;
+    let res = intPart.slice(-3);
+    let rem = intPart.slice(0, -3);
+    res = rem.slice(-2) + "," + res;
+    rem = rem.slice(0, -2);
+    if (rem.length > 0) { res = rem.slice(-2) + "," + res; rem = rem.slice(0, -2); }
+    if (rem.length > 0) { res = rem + "," + res; }
+    return sign + res + "." + decPart;
+  };
 
   const toLocalISO = (date: Date) => {
     const y = date.getFullYear();
@@ -73,34 +87,6 @@ export default function AutoSmeCcClient({ initialHistory }: { initialHistory: Hi
         }
     }
     const finalD = new Date(clean); finalD.setHours(0,0,0,0); return finalD;
-  };
-
-  const formatCurrency = (val: number) => {
-    if (val === 0) return "0.00";
-    const sign = val < 0 ? "-" : "";
-    const [intPart, decPart] = Math.abs(val).toFixed(2).split('.');
-    
-    if (intPart.length <= 3) return sign + intPart + "." + decPart;
-
-    let res = intPart.slice(-3);
-    let rem = intPart.slice(0, -3);
-    
-    // First group of 2
-    res = rem.slice(-2) + "," + res;
-    rem = rem.slice(0, -2);
-
-    if (rem.length > 0) {
-        // Second group of 2
-        res = rem.slice(-2) + "," + res;
-        rem = rem.slice(0, -2);
-    }
-
-    if (rem.length > 0) {
-        // No more commas for the rest
-        res = rem + "," + res;
-    }
-
-    return sign + res + "." + decPart;
   };
 
   const formatExcelDate = (dateStr: string) => {
@@ -154,6 +140,12 @@ export default function AutoSmeCcClient({ initialHistory }: { initialHistory: Hi
     setTransactions(newList);
   };
 
+  const updateTransaction = (index: number, field: keyof Transaction, value: any) => {
+    const newTransactions = [...transactions];
+    newTransactions[index] = { ...newTransactions[index], [field]: value };
+    recalculateLedger(newTransactions, calculateUpTo);
+  };
+
   useEffect(() => {
     if (transactions.length > 0) recalculateLedger(transactions, calculateUpTo);
   }, [calculateUpTo]);
@@ -197,20 +189,20 @@ export default function AutoSmeCcClient({ initialHistory }: { initialHistory: Hi
             return true;
         })
         .map((row, idx) => {
-            let dateVal = ""; const rawDate = row[colDate];
-            if (rawDate instanceof Date) dateVal = toLocalISO(rawDate);
-            else {
-                dateVal = String(rawDate).trim();
-                if (dateVal.includes('/')) {
-                    const parts = dateVal.split('/');
-                    if (parts.length === 3) dateVal = parts[0].length === 4 ? `${parts[0]}-${parts[1]}-${parts[2]}` : `${parts[2]}-${parts[1]}-${parts[0]}`;
-                } else if (dateVal.includes('-')) {
-                    const parts = dateVal.split('-');
-                    if (parts.length === 3 && isNaN(Number(parts[1]))) {
-                        const d = new Date(dateVal); if (!isNaN(d.getTime())) dateVal = toLocalISO(d);
-                    }
+            const rawDate = row[colDate];
+            let dateVal = "";
+            
+            if (rawDate instanceof Date) {
+                dateVal = toLocalISO(rawDate);
+            } else {
+                const parsed = parseToLocalMidnight(String(rawDate));
+                if (!isNaN(parsed.getTime())) {
+                    dateVal = toLocalISO(parsed);
+                } else {
+                    dateVal = String(rawDate).trim();
                 }
             }
+
             return {
                 id: `csv-${idx}-${Math.random()}`, date: dateVal,
                 description: colType !== -1 ? String(row[colType] || "").trim() : "Imported Transaction",
@@ -218,6 +210,7 @@ export default function AutoSmeCcClient({ initialHistory }: { initialHistory: Hi
                 outstanding: parseMoney(row[colBalance]), days: 0, rate: 13.40, interest: 0, isImported: true
             };
         });
+
       let finalTransactions = mapped;
       if (mapped.length > 0) {
           const firstTransDate = mapped[0].date;
@@ -346,7 +339,7 @@ export default function AutoSmeCcClient({ initialHistory }: { initialHistory: Hi
           <Link href="/apps/interest-calculation/sme-cc" className="p-2 bg-white border rounded-lg text-gray-600 hover:text-blue-600 shadow-sm transition-all"><svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg></Link>
           <h1 className="text-3xl font-bold tracking-tight">Automatic Calculation</h1>
         </div>
-        <button onClick={() => handlePrint()} className="bg-white border border-gray-200 text-gray-700 px-6 py-2 rounded-xl font-bold hover:bg-gray-50 shadow-sm transition-all active:scale-95 text-xs">Print Report</button>
+        <button onClick={() => handlePrint()} className="bg-white border border-gray-200 text-gray-700 px-6 py-3 rounded-xl font-bold hover:bg-gray-50 shadow-sm transition-all active:scale-95 text-xs">Print Report</button>
       </div>
 
       <div ref={printRef} className="space-y-4 font-sans text-black">
@@ -382,7 +375,7 @@ export default function AutoSmeCcClient({ initialHistory }: { initialHistory: Hi
           <div className="space-y-8 print-hidden">
             <div className="bg-white p-8 rounded-2xl border border-gray-100 grid md:grid-cols-2 gap-8 shadow-sm">
                 <div className="space-y-4">
-                    <h2 className="text-lg font-bold text-gray-900 tracking-tight">Calculation Settings</h2>
+                    <h2 className="text-lg font-bold text-gray-900 tracking-tight">Report Headers</h2>
                     <div className="flex items-center gap-4 bg-gray-50 p-4 rounded-xl">
                         <label className="text-xs font-black text-gray-400 uppercase w-20">End Date</label>
                         <input type="date" value={calculateUpTo} onChange={(e) => setCalculateUpTo(e.target.value)} className="p-2 border-none bg-white rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 font-bold flex-1" />
@@ -441,14 +434,21 @@ export default function AutoSmeCcClient({ initialHistory }: { initialHistory: Hi
                         {transactions.map((t, idx) => (
                           <tr key={t.id} className="hover:bg-blue-50/30 transition-colors border-b border-gray-50">
                             <td className="px-6 py-3 text-center text-gray-400 font-mono text-xs">{idx + 1}</td>
-                            <td className="px-6 py-3"><span className="font-bold text-gray-900 text-sm">{formatExcelDate(t.date)}</span></td>
+                            <td className="px-6 py-3">
+                                <input 
+                                    type="date" 
+                                    value={t.date} 
+                                    onChange={(e) => updateTransaction(idx, "date", e.target.value)} 
+                                    className="w-full bg-transparent p-0 border-none focus:ring-0 font-bold text-gray-900 text-sm" 
+                                />
+                            </td>
                             <td className="px-6 py-3 text-gray-700 text-sm">{t.description}</td>
-                            <td className="px-6 py-3 text-right"><span className="text-blue-600 font-bold text-sm">{t.debit.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span></td>
-                            <td className="px-6 py-3 text-right"><span className="text-rose-600 font-bold text-sm">{t.credit.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span></td>
-                            <td className="px-6 py-3 text-right font-black text-gray-900 text-sm">{t.outstanding.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
+                            <td className="px-6 py-3 text-right"><span className="text-blue-600 font-bold text-sm">{formatCurrency(t.debit)}</span></td>
+                            <td className="px-6 py-3 text-right"><span className="text-rose-600 font-bold text-sm">{formatCurrency(t.credit)}</span></td>
+                            <td className="px-6 py-3 text-right font-black text-gray-900 text-sm">{formatCurrency(t.outstanding)}</td>
                             <td className="px-6 py-3 text-center font-bold text-gray-400 text-sm">{t.days}</td>
                             <td className="px-6 py-3 text-center text-gray-500 font-bold text-sm">{t.rate.toFixed(2)}%</td>
-                            <td className="px-6 py-3 text-right font-bold text-blue-600 text-sm">{t.interest.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
+                            <td className="px-6 py-3 text-right font-bold text-blue-600 text-sm">{formatCurrency(t.interest)}</td>
                           </tr>
                         ))}
                       </tbody>

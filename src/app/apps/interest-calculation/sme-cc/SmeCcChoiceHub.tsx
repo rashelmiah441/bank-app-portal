@@ -12,10 +12,10 @@ interface HistoryRecord {
   smeCcRate: number;
 }
 
-export default function SmeCcChoiceHub({ history }: { history: any[] }) {
+export default function SmeCcChoiceHub({ history, savedLedgers }: { history: any[], savedLedgers: any[] }) {
   const [choice, setChoice] = useState<"none" | "manual" | "auto">("none");
 
-  if (choice === "manual") return <ManualSmeCcClient initialHistory={history} />;
+  if (choice === "manual") return <ManualSmeCcClient initialHistory={history} savedLedgers={savedLedgers} />;
   if (choice === "auto") return <AutoSmeCcClient initialHistory={history} />;
 
   return (

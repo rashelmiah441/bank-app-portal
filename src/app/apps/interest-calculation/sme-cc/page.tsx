@@ -12,5 +12,10 @@ export default async function SmeCcCalculatorPage() {
     orderBy: { fromPeriod: "desc" },
   });
 
-  return <SmeCcChoiceHub history={history} />;
+  const savedLedgers = await prisma.savedSmeCc.findMany({
+    where: { userId: session.user?.id },
+    orderBy: { updatedAt: "desc" },
+  });
+
+  return <SmeCcChoiceHub history={history} savedLedgers={savedLedgers} />;
 }

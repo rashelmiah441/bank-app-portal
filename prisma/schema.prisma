@@ -32,6 +32,23 @@ model User {
   kpiReports    KpiReport[]
   interestRateHistory InterestRateHistory[]
   savedPasswords SavedPassword[]
+  savedSmeCc    SavedSmeCc[]
+}
+
+model SavedSmeCc {
+  id            String   @id @default(cuid())
+  userId        String
+  title         String
+  bankName      String?
+  branchName    String?
+  customerName  String?
+  accountNumber String?
+  calculateUpTo String
+  transactions  String   // JSON stringified transactions
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model SavedPassword {
