@@ -1,0 +1,77 @@
+{
+  "node": {
+    "003702bac76070189d383dc1736df38f6ef2703fab": {
+      "workers": {
+        "app/apps/admin/users/page": {
+          "moduleId": 29236,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        }
+      },
+      "exportedName": "$$RSC_SERVER_ACTION_0",
+      "filename": "src/app/apps/layout.tsx"
+    },
+    "005896684e37a1fc89efccfbf2a42084992ce5ab1b": {
+      "workers": {
+        "app/apps/admin/users/page": {
+          "moduleId": 29236,
+          "async": false,
+          "exportedName": "getAllUsers",
+          "filename": "src/lib/actions/users.ts"
+        }
+      },
+      "exportedName": "getAllUsers",
+      "filename": "src/lib/actions/users.ts"
+    },
+    "4027dc0580806a3c55a6e0e29b4e0bf8fdb95f4a9c": {
+      "workers": {
+        "app/apps/admin/users/page": {
+          "moduleId": 29236,
+          "async": false,
+          "exportedName": "createUser",
+          "filename": "src/lib/actions/users.ts"
+        }
+      },
+      "exportedName": "createUser",
+      "filename": "src/lib/actions/users.ts"
+    },
+    "402c1d6c9852317b8f55ee9f266853072110be845c": {
+      "workers": {
+        "app/apps/admin/users/page": {
+          "moduleId": 29236,
+          "async": false,
+          "exportedName": "updateCurrentUser",
+          "filename": "src/lib/actions/users.ts"
+        }
+      },
+      "exportedName": "updateCurrentUser",
+      "filename": "src/lib/actions/users.ts"
+    },
+    "40a60ac5e8b8ef07372d13c5fa47cc2e2876e070f2": {
+      "workers": {
+        "app/apps/admin/users/page": {
+          "moduleId": 29236,
+          "async": false,
+          "exportedName": "deleteUser",
+          "filename": "src/lib/actions/users.ts"
+        }
+      },
+      "exportedName": "deleteUser",
+      "filename": "src/lib/actions/users.ts"
+    },
+    "6008fa1898dd990d19a78d06920c7902c166452f7f": {
+      "workers": {
+        "app/apps/admin/users/page": {
+          "moduleId": 29236,
+          "async": false,
+          "exportedName": "updateUser",
+          "filename": "src/lib/actions/users.ts"
+        }
+      },
+      "exportedName": "updateUser",
+      "filename": "src/lib/actions/users.ts"
+    }
+  },
+  "edge": {}
+}
