@@ -1,8 +1,13 @@
 import Link from "next/link";
 import { auth } from "@/auth";
+import { redirect } from "next/navigation";
 
 export default async function Home() {
   const session = await auth();
+
+  if (session) {
+    redirect("/apps/dashboard");
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 flex flex-col items-center justify-center p-4">
@@ -41,7 +46,7 @@ export default async function Home() {
             </Link>
           ) : (
             <Link
-              href="/api/auth/signin"
+              href="/api/auth/signin?callbackUrl=/apps/dashboard"
               className="block w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-xl transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
             >
               Login to Get Started

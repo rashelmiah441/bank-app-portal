@@ -12,6 +12,7 @@ export async function updateCurrentUser(formData: FormData) {
   const email = formData.get("email") as string
   const password = formData.get("password") as string
   const branchName = formData.get("branchName") as string
+  const branchNameBangla = formData.get("branchNameBangla") as string
   const branchCode = formData.get("branchCode") as string
   const districtName = formData.get("districtName") as string
   const zoneName = formData.get("zoneName") as string
@@ -25,6 +26,7 @@ export async function updateCurrentUser(formData: FormData) {
     
     // Always update these if provided (can be empty strings to clear)
     if (branchName !== null) data.branchName = branchName
+    if (branchNameBangla !== null) data.branchNameBangla = branchNameBangla
     if (branchCode !== null) data.branchCode = branchCode
     if (districtName !== null) data.districtName = districtName
     if (zoneName !== null) data.zoneName = zoneName

@@ -15,7 +15,8 @@ model User {
   image         String?
   password      String?
   role          String    @default("USER")
-  branchName    String?
+  branchName    String?   // English Branch Name
+  branchNameBangla String?  // Bangla Branch Name
   branchCode    String?
   districtName  String?
   zoneName      String?
@@ -28,6 +29,36 @@ model User {
   letters       Letter[]
   savedRecipients SavedRecipient[]
   savedCCs      SavedCC[]
+  kpiReports    KpiReport[]
+  interestRateHistory InterestRateHistory[]
+  savedPasswords SavedPassword[]
+}
+
+model SavedPassword {
+  id        String   @id @default(cuid())
+  userId    String
+  title     String   // e.g., "Email", "Bank Portal"
+  username  String?
+  password  String
+  url       String?
+  notes     String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model KpiReport {
+  id        String   @id @default(cuid())
+  userId    String
+  month     String   // e.g., "2026-05"
+  data      String   // JSON stringified KPI data
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, month])
 }
 
 model SavedCC {
@@ -161,4 +192,21 @@ model AppData {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([userId, appName])
+}
+
+model InterestRateHistory {
+  id                  String   @id @default(cuid())
+  userId              String
+  fromPeriod          DateTime
+  toPeriod            DateTime?
+  smeCcRate           Float
+  personalLoanRate    Float
+  anyPurposeLoanRate  Float
+  staffLoanRate       Float
+  ruralCreditCropRate Float
+  circularLink        String?
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
