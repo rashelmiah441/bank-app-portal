@@ -1,0 +1,77 @@
+{
+  "node": {
+    "004ff9eb6c7a98384e8c2010533d89022bea1909d3": {
+      "workers": {
+        "app/apps/admin/branches/page": {
+          "moduleId": 46408,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        }
+      },
+      "exportedName": "$$RSC_SERVER_ACTION_0",
+      "filename": "src/app/apps/layout.tsx"
+    },
+    "40b9bf8d1058291dbe11cdba1128a1d2a10e715dcf": {
+      "workers": {
+        "app/apps/admin/branches/page": {
+          "moduleId": 46408,
+          "async": false,
+          "exportedName": "createBranch",
+          "filename": "src/app/apps/admin/branches/actions.ts"
+        }
+      },
+      "exportedName": "createBranch",
+      "filename": "src/app/apps/admin/branches/actions.ts"
+    },
+    "6078de179c9043238bc8b8487a13d60949803bdd0d": {
+      "workers": {
+        "app/apps/admin/branches/page": {
+          "moduleId": 46408,
+          "async": false,
+          "exportedName": "updateBranch",
+          "filename": "src/app/apps/admin/branches/actions.ts"
+        }
+      },
+      "exportedName": "updateBranch",
+      "filename": "src/app/apps/admin/branches/actions.ts"
+    },
+    "7027f1ab6f4a61b5f23453df2185aa3e31519b18aa": {
+      "workers": {
+        "app/apps/admin/branches/page": {
+          "moduleId": 46408,
+          "async": false,
+          "exportedName": "getBranches",
+          "filename": "src/app/apps/admin/branches/actions.ts"
+        }
+      },
+      "exportedName": "getBranches",
+      "filename": "src/app/apps/admin/branches/actions.ts"
+    },
+    "4051a063288f242e3f718a94ce3474c85ed8af42c2": {
+      "workers": {
+        "app/apps/admin/branches/page": {
+          "moduleId": 46408,
+          "async": false,
+          "exportedName": "deleteBranch",
+          "filename": "src/app/apps/admin/branches/actions.ts"
+        }
+      },
+      "exportedName": "deleteBranch",
+      "filename": "src/app/apps/admin/branches/actions.ts"
+    },
+    "40bd195253d260161ee217ea514149bad9d3a29145": {
+      "workers": {
+        "app/apps/admin/branches/page": {
+          "moduleId": 46408,
+          "async": false,
+          "exportedName": "uploadBranchesExcel",
+          "filename": "src/app/apps/admin/branches/actions.ts"
+        }
+      },
+      "exportedName": "uploadBranchesExcel",
+      "filename": "src/app/apps/admin/branches/actions.ts"
+    }
+  },
+  "edge": {}
+}

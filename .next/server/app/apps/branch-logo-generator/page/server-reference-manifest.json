@@ -1,0 +1,17 @@
+{
+  "node": {
+    "004ff9eb6c7a98384e8c2010533d89022bea1909d3": {
+      "workers": {
+        "app/apps/branch-logo-generator/page": {
+          "moduleId": 92612,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        }
+      },
+      "exportedName": "$$RSC_SERVER_ACTION_0",
+      "filename": "src/app/apps/layout.tsx"
+    }
+  },
+  "edge": {}
+}

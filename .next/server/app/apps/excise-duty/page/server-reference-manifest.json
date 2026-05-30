@@ -1,0 +1,65 @@
+{
+  "node": {
+    "004ff9eb6c7a98384e8c2010533d89022bea1909d3": {
+      "workers": {
+        "app/apps/excise-duty/page": {
+          "moduleId": 73824,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        }
+      },
+      "exportedName": "$$RSC_SERVER_ACTION_0",
+      "filename": "src/app/apps/layout.tsx"
+    },
+    "00c41443ac83ab195c965dfb576cba0a979aa0530d": {
+      "workers": {
+        "app/apps/excise-duty/page": {
+          "moduleId": 73824,
+          "async": false,
+          "exportedName": "getExciseDuties",
+          "filename": "src/app/apps/excise-duty/actions.ts"
+        }
+      },
+      "exportedName": "getExciseDuties",
+      "filename": "src/app/apps/excise-duty/actions.ts"
+    },
+    "408854bf863826085773b846230d8f22bed392fa4a": {
+      "workers": {
+        "app/apps/excise-duty/page": {
+          "moduleId": 73824,
+          "async": false,
+          "exportedName": "createExciseDuty",
+          "filename": "src/app/apps/excise-duty/actions.ts"
+        }
+      },
+      "exportedName": "createExciseDuty",
+      "filename": "src/app/apps/excise-duty/actions.ts"
+    },
+    "604c3781775ceeeff06e5b9b8cadaee7ae27cdc25d": {
+      "workers": {
+        "app/apps/excise-duty/page": {
+          "moduleId": 73824,
+          "async": false,
+          "exportedName": "updateExciseDuty",
+          "filename": "src/app/apps/excise-duty/actions.ts"
+        }
+      },
+      "exportedName": "updateExciseDuty",
+      "filename": "src/app/apps/excise-duty/actions.ts"
+    },
+    "40805fe55502a5608a10c616619054c23d434329dd": {
+      "workers": {
+        "app/apps/excise-duty/page": {
+          "moduleId": 73824,
+          "async": false,
+          "exportedName": "deleteExciseDuty",
+          "filename": "src/app/apps/excise-duty/actions.ts"
+        }
+      },
+      "exportedName": "deleteExciseDuty",
+      "filename": "src/app/apps/excise-duty/actions.ts"
+    }
+  },
+  "edge": {}
+}

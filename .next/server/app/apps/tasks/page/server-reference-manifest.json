@@ -1,0 +1,65 @@
+{
+  "node": {
+    "004ff9eb6c7a98384e8c2010533d89022bea1909d3": {
+      "workers": {
+        "app/apps/tasks/page": {
+          "moduleId": 72087,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        }
+      },
+      "exportedName": "$$RSC_SERVER_ACTION_0",
+      "filename": "src/app/apps/layout.tsx"
+    },
+    "009f0bbf816775d96464db4894af10435ce192625d": {
+      "workers": {
+        "app/apps/tasks/page": {
+          "moduleId": 72087,
+          "async": false,
+          "exportedName": "getTasks",
+          "filename": "src/app/apps/tasks/actions.ts"
+        }
+      },
+      "exportedName": "getTasks",
+      "filename": "src/app/apps/tasks/actions.ts"
+    },
+    "401a88413f111fb930c0f7d79da829131cb2892602": {
+      "workers": {
+        "app/apps/tasks/page": {
+          "moduleId": 72087,
+          "async": false,
+          "exportedName": "createTask",
+          "filename": "src/app/apps/tasks/actions.ts"
+        }
+      },
+      "exportedName": "createTask",
+      "filename": "src/app/apps/tasks/actions.ts"
+    },
+    "40b77b8a5582bcbbccac633aed6ab268d2dd16a395": {
+      "workers": {
+        "app/apps/tasks/page": {
+          "moduleId": 72087,
+          "async": false,
+          "exportedName": "deleteTask",
+          "filename": "src/app/apps/tasks/actions.ts"
+        }
+      },
+      "exportedName": "deleteTask",
+      "filename": "src/app/apps/tasks/actions.ts"
+    },
+    "6035b7e48b933c2967a52baf2b23af1bde2a1dc8ae": {
+      "workers": {
+        "app/apps/tasks/page": {
+          "moduleId": 72087,
+          "async": false,
+          "exportedName": "updateTask",
+          "filename": "src/app/apps/tasks/actions.ts"
+        }
+      },
+      "exportedName": "updateTask",
+      "filename": "src/app/apps/tasks/actions.ts"
+    }
+  },
+  "edge": {}
+}

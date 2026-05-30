@@ -1,0 +1,17 @@
+{
+  "node": {
+    "004ff9eb6c7a98384e8c2010533d89022bea1909d3": {
+      "workers": {
+        "app/apps/gl-pl/print/[id]/page": {
+          "moduleId": 61492,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        }
+      },
+      "exportedName": "$$RSC_SERVER_ACTION_0",
+      "filename": "src/app/apps/layout.tsx"
+    }
+  },
+  "edge": {}
+}

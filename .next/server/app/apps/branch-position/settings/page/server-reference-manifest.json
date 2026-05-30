@@ -1,0 +1,77 @@
+{
+  "node": {
+    "004ff9eb6c7a98384e8c2010533d89022bea1909d3": {
+      "workers": {
+        "app/apps/branch-position/settings/page": {
+          "moduleId": 41377,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        }
+      },
+      "exportedName": "$$RSC_SERVER_ACTION_0",
+      "filename": "src/app/apps/layout.tsx"
+    },
+    "0003c294b645da11a90ccf374fa17ea91751062cc1": {
+      "workers": {
+        "app/apps/branch-position/settings/page": {
+          "moduleId": 41377,
+          "async": false,
+          "exportedName": "getSettings",
+          "filename": "src/app/apps/branch-position/actions.ts"
+        }
+      },
+      "exportedName": "getSettings",
+      "filename": "src/app/apps/branch-position/actions.ts"
+    },
+    "40004223e147264c7ecc9e7bd53e21fe4984b94559": {
+      "workers": {
+        "app/apps/branch-position/settings/page": {
+          "moduleId": 41377,
+          "async": false,
+          "exportedName": "saveSettings",
+          "filename": "src/app/apps/branch-position/actions.ts"
+        }
+      },
+      "exportedName": "saveSettings",
+      "filename": "src/app/apps/branch-position/actions.ts"
+    },
+    "40676638119f02a505fd1bd026ccdf9d254408ffe3": {
+      "workers": {
+        "app/apps/branch-position/settings/page": {
+          "moduleId": 41377,
+          "async": false,
+          "exportedName": "getLatestData",
+          "filename": "src/app/apps/branch-position/actions.ts"
+        }
+      },
+      "exportedName": "getLatestData",
+      "filename": "src/app/apps/branch-position/actions.ts"
+    },
+    "70c937bdaad7930c982ebbd6a1a5012eef950828d0": {
+      "workers": {
+        "app/apps/branch-position/settings/page": {
+          "moduleId": 41377,
+          "async": false,
+          "exportedName": "getComparisonData",
+          "filename": "src/app/apps/branch-position/actions.ts"
+        }
+      },
+      "exportedName": "getComparisonData",
+      "filename": "src/app/apps/branch-position/actions.ts"
+    },
+    "78982a7c8f2e54ae7d283182a2bf9a71880bf7b271": {
+      "workers": {
+        "app/apps/branch-position/settings/page": {
+          "moduleId": 41377,
+          "async": false,
+          "exportedName": "fetchAmountByDescription",
+          "filename": "src/app/apps/branch-position/actions.ts"
+        }
+      },
+      "exportedName": "fetchAmountByDescription",
+      "filename": "src/app/apps/branch-position/actions.ts"
+    }
+  },
+  "edge": {}
+}

@@ -1,0 +1,240 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/api/auth/[...nextauth]",
+      "regex": "^/api/auth/(.+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPnextauth": "nxtPnextauth"
+      },
+      "namedRegex": "^/api/auth/(?<nxtPnextauth>.+?)(?:/)?$"
+    },
+    {
+      "page": "/api/uploads/[id]",
+      "regex": "^/api/uploads/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/uploads/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/apps/gl-pl/print/[id]",
+      "regex": "^/apps/gl\\-pl/print/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/apps/gl\\-pl/print/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/apps/letters/[id]",
+      "regex": "^/apps/letters/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/apps/letters/(?<nxtPid>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/apps/abs-calculator",
+      "regex": "^/apps/abs\\-calculator(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apps/abs\\-calculator(?:/)?$"
+    },
+    {
+      "page": "/apps/admin/branches",
+      "regex": "^/apps/admin/branches(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apps/admin/branches(?:/)?$"
+    },
+    {
+      "page": "/apps/admin/users",
+      "regex": "^/apps/admin/users(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apps/admin/users(?:/)?$"
+    },
+    {
+      "page": "/apps/branch-logo-generator",
+      "regex": "^/apps/branch\\-logo\\-generator(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apps/branch\\-logo\\-generator(?:/)?$"
+    },
+    {
+      "page": "/apps/branch-position",
+      "regex": "^/apps/branch\\-position(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apps/branch\\-position(?:/)?$"
+    },
+    {
+      "page": "/apps/branch-position/compare",
+      "regex": "^/apps/branch\\-position/compare(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apps/branch\\-position/compare(?:/)?$"
+    },
+    {
+      "page": "/apps/branch-position/latest",
+      "regex": "^/apps/branch\\-position/latest(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apps/branch\\-position/latest(?:/)?$"
+    },
+    {
+      "page": "/apps/branch-position/settings",
+      "regex": "^/apps/branch\\-position/settings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apps/branch\\-position/settings(?:/)?$"
+    },
+    {
+      "page": "/apps/dashboard",
+      "regex": "^/apps/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apps/dashboard(?:/)?$"
+    },
+    {
+      "page": "/apps/excise-duty",
+      "regex": "^/apps/excise\\-duty(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apps/excise\\-duty(?:/)?$"
+    },
+    {
+      "page": "/apps/fdr-calculator",
+      "regex": "^/apps/fdr\\-calculator(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apps/fdr\\-calculator(?:/)?$"
+    },
+    {
+      "page": "/apps/gl-pl",
+      "regex": "^/apps/gl\\-pl(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apps/gl\\-pl(?:/)?$"
+    },
+    {
+      "page": "/apps/interest-calculation",
+      "regex": "^/apps/interest\\-calculation(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apps/interest\\-calculation(?:/)?$"
+    },
+    {
+      "page": "/apps/interest-calculation/history",
+      "regex": "^/apps/interest\\-calculation/history(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apps/interest\\-calculation/history(?:/)?$"
+    },
+    {
+      "page": "/apps/interest-calculation/personal",
+      "regex": "^/apps/interest\\-calculation/personal(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apps/interest\\-calculation/personal(?:/)?$"
+    },
+    {
+      "page": "/apps/interest-calculation/sme-cc",
+      "regex": "^/apps/interest\\-calculation/sme\\-cc(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apps/interest\\-calculation/sme\\-cc(?:/)?$"
+    },
+    {
+      "page": "/apps/kpi",
+      "regex": "^/apps/kpi(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apps/kpi(?:/)?$"
+    },
+    {
+      "page": "/apps/letters",
+      "regex": "^/apps/letters(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apps/letters(?:/)?$"
+    },
+    {
+      "page": "/apps/letters/new",
+      "regex": "^/apps/letters/new(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apps/letters/new(?:/)?$"
+    },
+    {
+      "page": "/apps/notes",
+      "regex": "^/apps/notes(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apps/notes(?:/)?$"
+    },
+    {
+      "page": "/apps/passwords",
+      "regex": "^/apps/passwords(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apps/passwords(?:/)?$"
+    },
+    {
+      "page": "/apps/settings",
+      "regex": "^/apps/settings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apps/settings(?:/)?$"
+    },
+    {
+      "page": "/apps/tasks",
+      "regex": "^/apps/tasks(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apps/tasks(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

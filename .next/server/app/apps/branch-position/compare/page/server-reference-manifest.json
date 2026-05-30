@@ -1,0 +1,29 @@
+{
+  "node": {
+    "004ff9eb6c7a98384e8c2010533d89022bea1909d3": {
+      "workers": {
+        "app/apps/branch-position/compare/page": {
+          "moduleId": 7398,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        }
+      },
+      "exportedName": "$$RSC_SERVER_ACTION_0",
+      "filename": "src/app/apps/layout.tsx"
+    },
+    "70c937bdaad7930c982ebbd6a1a5012eef950828d0": {
+      "workers": {
+        "app/apps/branch-position/compare/page": {
+          "moduleId": 7398,
+          "async": false,
+          "exportedName": "getComparisonData",
+          "filename": "src/app/apps/branch-position/actions.ts"
+        }
+      },
+      "exportedName": "getComparisonData",
+      "filename": "src/app/apps/branch-position/actions.ts"
+    }
+  },
+  "edge": {}
+}

@@ -1,0 +1,89 @@
+{
+  "node": {
+    "004ff9eb6c7a98384e8c2010533d89022bea1909d3": {
+      "workers": {
+        "app/apps/kpi/page": {
+          "moduleId": 1540,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        }
+      },
+      "exportedName": "$$RSC_SERVER_ACTION_0",
+      "filename": "src/app/apps/layout.tsx"
+    },
+    "408e6c2dec52892f4c6c77cd2a9dd578a251a9a688": {
+      "workers": {
+        "app/apps/kpi/page": {
+          "moduleId": 1540,
+          "async": false,
+          "exportedName": "fetchGLPLData",
+          "filename": "src/app/apps/kpi/actions.ts"
+        }
+      },
+      "exportedName": "fetchGLPLData",
+      "filename": "src/app/apps/kpi/actions.ts"
+    },
+    "60418873996b0afc47d84b08750f090232a237b5d1": {
+      "workers": {
+        "app/apps/kpi/page": {
+          "moduleId": 1540,
+          "async": false,
+          "exportedName": "saveKPIReport",
+          "filename": "src/app/apps/kpi/actions.ts"
+        }
+      },
+      "exportedName": "saveKPIReport",
+      "filename": "src/app/apps/kpi/actions.ts"
+    },
+    "407fe7232d0e3caebd8ea31a56b3e2c92c7a7c0a14": {
+      "workers": {
+        "app/apps/kpi/page": {
+          "moduleId": 1540,
+          "async": false,
+          "exportedName": "deleteKPIReport",
+          "filename": "src/app/apps/kpi/actions.ts"
+        }
+      },
+      "exportedName": "deleteKPIReport",
+      "filename": "src/app/apps/kpi/actions.ts"
+    },
+    "408780c6f30f0a20feff3847577c6a0c921732df61": {
+      "workers": {
+        "app/apps/kpi/page": {
+          "moduleId": 1540,
+          "async": false,
+          "exportedName": "updateKPIBaseline",
+          "filename": "src/app/apps/kpi/actions.ts"
+        }
+      },
+      "exportedName": "updateKPIBaseline",
+      "filename": "src/app/apps/kpi/actions.ts"
+    },
+    "009b0c46155bed1beedcb34c5b4a73330ea098c1a0": {
+      "workers": {
+        "app/apps/kpi/page": {
+          "moduleId": 1540,
+          "async": false,
+          "exportedName": "getKPIBaseline",
+          "filename": "src/app/apps/kpi/actions.ts"
+        }
+      },
+      "exportedName": "getKPIBaseline",
+      "filename": "src/app/apps/kpi/actions.ts"
+    },
+    "00f45e9cf748f69c9e8e1a0a406e1cecec4e105e54": {
+      "workers": {
+        "app/apps/kpi/page": {
+          "moduleId": 1540,
+          "async": false,
+          "exportedName": "getKPIReports",
+          "filename": "src/app/apps/kpi/actions.ts"
+        }
+      },
+      "exportedName": "getKPIReports",
+      "filename": "src/app/apps/kpi/actions.ts"
+    }
+  },
+  "edge": {}
+}

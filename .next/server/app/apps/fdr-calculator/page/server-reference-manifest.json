@@ -1,0 +1,29 @@
+{
+  "node": {
+    "004ff9eb6c7a98384e8c2010533d89022bea1909d3": {
+      "workers": {
+        "app/apps/fdr-calculator/page": {
+          "moduleId": 27702,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        }
+      },
+      "exportedName": "$$RSC_SERVER_ACTION_0",
+      "filename": "src/app/apps/layout.tsx"
+    },
+    "00c41443ac83ab195c965dfb576cba0a979aa0530d": {
+      "workers": {
+        "app/apps/fdr-calculator/page": {
+          "moduleId": 27702,
+          "async": false,
+          "exportedName": "getExciseDuties",
+          "filename": "src/app/apps/excise-duty/actions.ts"
+        }
+      },
+      "exportedName": "getExciseDuties",
+      "filename": "src/app/apps/excise-duty/actions.ts"
+    }
+  },
+  "edge": {}
+}

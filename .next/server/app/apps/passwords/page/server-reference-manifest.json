@@ -1,0 +1,53 @@
+{
+  "node": {
+    "004ff9eb6c7a98384e8c2010533d89022bea1909d3": {
+      "workers": {
+        "app/apps/passwords/page": {
+          "moduleId": 89239,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        }
+      },
+      "exportedName": "$$RSC_SERVER_ACTION_0",
+      "filename": "src/app/apps/layout.tsx"
+    },
+    "40336e578dc0a77f462a4ed6d89cb39278e4dd373d": {
+      "workers": {
+        "app/apps/passwords/page": {
+          "moduleId": 89239,
+          "async": false,
+          "exportedName": "createPassword",
+          "filename": "src/app/apps/passwords/actions.ts"
+        }
+      },
+      "exportedName": "createPassword",
+      "filename": "src/app/apps/passwords/actions.ts"
+    },
+    "405797e4e28ad7d848be997d19bd04b81b7f0e1c57": {
+      "workers": {
+        "app/apps/passwords/page": {
+          "moduleId": 89239,
+          "async": false,
+          "exportedName": "deletePassword",
+          "filename": "src/app/apps/passwords/actions.ts"
+        }
+      },
+      "exportedName": "deletePassword",
+      "filename": "src/app/apps/passwords/actions.ts"
+    },
+    "60eda9f56ff3b10520e9c24b99923c9cba5789c969": {
+      "workers": {
+        "app/apps/passwords/page": {
+          "moduleId": 89239,
+          "async": false,
+          "exportedName": "updatePassword",
+          "filename": "src/app/apps/passwords/actions.ts"
+        }
+      },
+      "exportedName": "updatePassword",
+      "filename": "src/app/apps/passwords/actions.ts"
+    }
+  },
+  "edge": {}
+}

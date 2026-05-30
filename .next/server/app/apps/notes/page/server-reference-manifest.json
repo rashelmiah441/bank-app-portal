@@ -1,0 +1,29 @@
+{
+  "node": {
+    "004ff9eb6c7a98384e8c2010533d89022bea1909d3": {
+      "workers": {
+        "app/apps/notes/page": {
+          "moduleId": 11110,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/apps/layout.tsx"
+        }
+      },
+      "exportedName": "$$RSC_SERVER_ACTION_0",
+      "filename": "src/app/apps/layout.tsx"
+    },
+    "40d6211f23ae0182b062272d45428a0abdaa5aee0c": {
+      "workers": {
+        "app/apps/notes/page": {
+          "moduleId": 11110,
+          "async": false,
+          "exportedName": "saveNote",
+          "filename": "src/app/apps/notes/actions.ts"
+        }
+      },
+      "exportedName": "saveNote",
+      "filename": "src/app/apps/notes/actions.ts"
+    }
+  },
+  "edge": {}
+}
