@@ -1,6 +1,6 @@
 {
   "node": {
-    "004ff9eb6c7a98384e8c2010533d89022bea1909d3": {
+    "004d72cd70323770e7b020b3a42ca3d88f78d768bf": {
       "workers": {
         "app/apps/branch-position/settings/page": {
           "moduleId": 41377,
@@ -12,7 +12,7 @@
       "exportedName": "$$RSC_SERVER_ACTION_0",
       "filename": "src/app/apps/layout.tsx"
     },
-    "0003c294b645da11a90ccf374fa17ea91751062cc1": {
+    "0071f57bcafe31fa20047b76de2457031985047559": {
       "workers": {
         "app/apps/branch-position/settings/page": {
           "moduleId": 41377,
@@ -24,7 +24,7 @@
       "exportedName": "getSettings",
       "filename": "src/app/apps/branch-position/actions.ts"
     },
-    "40004223e147264c7ecc9e7bd53e21fe4984b94559": {
+    "40743ee07b68e7c24e4a372dd4bc2b36b2fe119c1d": {
       "workers": {
         "app/apps/branch-position/settings/page": {
           "moduleId": 41377,
@@ -36,7 +36,7 @@
       "exportedName": "saveSettings",
       "filename": "src/app/apps/branch-position/actions.ts"
     },
-    "40676638119f02a505fd1bd026ccdf9d254408ffe3": {
+    "409e5b0b787693d1cbef1660e5697e73609a7ed942": {
       "workers": {
         "app/apps/branch-position/settings/page": {
           "moduleId": 41377,
@@ -48,7 +48,7 @@
       "exportedName": "getLatestData",
       "filename": "src/app/apps/branch-position/actions.ts"
     },
-    "70c937bdaad7930c982ebbd6a1a5012eef950828d0": {
+    "708c81ca5b4e8d440b44f313bf7d00f7e148420ca2": {
       "workers": {
         "app/apps/branch-position/settings/page": {
           "moduleId": 41377,
@@ -60,7 +60,7 @@
       "exportedName": "getComparisonData",
       "filename": "src/app/apps/branch-position/actions.ts"
     },
-    "78982a7c8f2e54ae7d283182a2bf9a71880bf7b271": {
+    "7851bf0be4e2e596958fd000a1cea5c516d46ee681": {
       "workers": {
         "app/apps/branch-position/settings/page": {
           "moduleId": 41377,

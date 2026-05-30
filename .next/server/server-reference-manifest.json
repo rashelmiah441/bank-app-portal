@@ -1,6 +1,6 @@
 {
   "node": {
-    "004ff9eb6c7a98384e8c2010533d89022bea1909d3": {
+    "004d72cd70323770e7b020b3a42ca3d88f78d768bf": {
       "workers": {
         "app/apps/abs-calculator/page": {
           "moduleId": 77930,
@@ -156,7 +156,7 @@
       "filename": "src/app/apps/layout.tsx",
       "exportedName": "$$RSC_SERVER_ACTION_0"
     },
-    "00c41443ac83ab195c965dfb576cba0a979aa0530d": {
+    "00d2a90de0495b00507e62f8c161d1a044ab8c43db": {
       "workers": {
         "app/apps/abs-calculator/page": {
           "moduleId": 77930,
@@ -180,7 +180,7 @@
       "filename": "src/app/apps/excise-duty/actions.ts",
       "exportedName": "getExciseDuties"
     },
-    "40b9bf8d1058291dbe11cdba1128a1d2a10e715dcf": {
+    "40e60611de4c4813b613ff433858d13f45c3f0b5ba": {
       "workers": {
         "app/apps/admin/branches/page": {
           "moduleId": 46408,
@@ -192,7 +192,7 @@
       "filename": "src/app/apps/admin/branches/actions.ts",
       "exportedName": "createBranch"
     },
-    "6078de179c9043238bc8b8487a13d60949803bdd0d": {
+    "605df645ff0e57f788ed4ff1c0bbe84874b92dafce": {
       "workers": {
         "app/apps/admin/branches/page": {
           "moduleId": 46408,
@@ -204,7 +204,7 @@
       "filename": "src/app/apps/admin/branches/actions.ts",
       "exportedName": "updateBranch"
     },
-    "7027f1ab6f4a61b5f23453df2185aa3e31519b18aa": {
+    "7078d3086efbca38d7608648aa12b456261556f17c": {
       "workers": {
         "app/apps/admin/branches/page": {
           "moduleId": 46408,
@@ -216,7 +216,7 @@
       "filename": "src/app/apps/admin/branches/actions.ts",
       "exportedName": "getBranches"
     },
-    "4051a063288f242e3f718a94ce3474c85ed8af42c2": {
+    "404c14d61406241e016eb3f1682893ec4f3d6dbdfd": {
       "workers": {
         "app/apps/admin/branches/page": {
           "moduleId": 46408,
@@ -228,7 +228,7 @@
       "filename": "src/app/apps/admin/branches/actions.ts",
       "exportedName": "deleteBranch"
     },
-    "40bd195253d260161ee217ea514149bad9d3a29145": {
+    "408294fc713f5c4a5938d05aee0b6a344c7ece26b1": {
       "workers": {
         "app/apps/admin/branches/page": {
           "moduleId": 46408,
@@ -240,7 +240,7 @@
       "filename": "src/app/apps/admin/branches/actions.ts",
       "exportedName": "uploadBranchesExcel"
     },
-    "00a99dd0334397a4c5c187b41ccc665ceaf6908ce9": {
+    "00534f8228a00a7f383129fdedb753965460d49c38": {
       "workers": {
         "app/apps/admin/users/page": {
           "moduleId": 29236,
@@ -252,7 +252,7 @@
       "filename": "src/lib/actions/users.ts",
       "exportedName": "getAllUsers"
     },
-    "404aa61186ab8f83b1508ae5cad4055315dd1e0613": {
+    "406f6eb1da7b68a31ac55906c0d0a7004522870332": {
       "workers": {
         "app/apps/admin/users/page": {
           "moduleId": 29236,
@@ -264,19 +264,7 @@
       "filename": "src/lib/actions/users.ts",
       "exportedName": "deleteUser"
     },
-    "40bce148fa60a3801b8ae08ccd478ee30307dcbaef": {
-      "workers": {
-        "app/apps/admin/users/page": {
-          "moduleId": 29236,
-          "async": false,
-          "exportedName": "createUser",
-          "filename": "src/lib/actions/users.ts"
-        }
-      },
-      "filename": "src/lib/actions/users.ts",
-      "exportedName": "createUser"
-    },
-    "40d731898ac49820d8122ef1318f88c0228ab423c0": {
+    "40de9eed582341dde6652f91c1c3c09f72f096b674": {
       "workers": {
         "app/apps/admin/users/page": {
           "moduleId": 29236,
@@ -294,7 +282,19 @@
       "filename": "src/lib/actions/users.ts",
       "exportedName": "updateCurrentUser"
     },
-    "609949d7ab04604ea353907514440bbdb24e6cbcd1": {
+    "40fe156add476044603b14b9d1f2b5d620a6758834": {
+      "workers": {
+        "app/apps/admin/users/page": {
+          "moduleId": 29236,
+          "async": false,
+          "exportedName": "createUser",
+          "filename": "src/lib/actions/users.ts"
+        }
+      },
+      "filename": "src/lib/actions/users.ts",
+      "exportedName": "createUser"
+    },
+    "60a76c64b5aa6fce42667501345d4964fb287dd2dd": {
       "workers": {
         "app/apps/admin/users/page": {
           "moduleId": 29236,
@@ -306,7 +306,7 @@
       "filename": "src/lib/actions/users.ts",
       "exportedName": "updateUser"
     },
-    "70c937bdaad7930c982ebbd6a1a5012eef950828d0": {
+    "708c81ca5b4e8d440b44f313bf7d00f7e148420ca2": {
       "workers": {
         "app/apps/branch-position/compare/page": {
           "moduleId": 7398,
@@ -330,7 +330,7 @@
       "filename": "src/app/apps/branch-position/actions.ts",
       "exportedName": "getComparisonData"
     },
-    "0003c294b645da11a90ccf374fa17ea91751062cc1": {
+    "0071f57bcafe31fa20047b76de2457031985047559": {
       "workers": {
         "app/apps/branch-position/latest/page": {
           "moduleId": 80008,
@@ -348,7 +348,7 @@
       "filename": "src/app/apps/branch-position/actions.ts",
       "exportedName": "getSettings"
     },
-    "40004223e147264c7ecc9e7bd53e21fe4984b94559": {
+    "40743ee07b68e7c24e4a372dd4bc2b36b2fe119c1d": {
       "workers": {
         "app/apps/branch-position/latest/page": {
           "moduleId": 80008,
@@ -366,7 +366,7 @@
       "filename": "src/app/apps/branch-position/actions.ts",
       "exportedName": "saveSettings"
     },
-    "40676638119f02a505fd1bd026ccdf9d254408ffe3": {
+    "409e5b0b787693d1cbef1660e5697e73609a7ed942": {
       "workers": {
         "app/apps/branch-position/latest/page": {
           "moduleId": 80008,
@@ -384,7 +384,7 @@
       "filename": "src/app/apps/branch-position/actions.ts",
       "exportedName": "getLatestData"
     },
-    "78982a7c8f2e54ae7d283182a2bf9a71880bf7b271": {
+    "7851bf0be4e2e596958fd000a1cea5c516d46ee681": {
       "workers": {
         "app/apps/branch-position/latest/page": {
           "moduleId": 80008,
@@ -402,7 +402,7 @@
       "filename": "src/app/apps/branch-position/actions.ts",
       "exportedName": "fetchAmountByDescription"
     },
-    "408854bf863826085773b846230d8f22bed392fa4a": {
+    "40ccef0d75b9c8a1c74043a8944beb34fc1d060b14": {
       "workers": {
         "app/apps/excise-duty/page": {
           "moduleId": 73824,
@@ -414,7 +414,7 @@
       "filename": "src/app/apps/excise-duty/actions.ts",
       "exportedName": "createExciseDuty"
     },
-    "604c3781775ceeeff06e5b9b8cadaee7ae27cdc25d": {
+    "60c78429c17005a1337480fcf08c9a761f7aed824d": {
       "workers": {
         "app/apps/excise-duty/page": {
           "moduleId": 73824,
@@ -426,7 +426,7 @@
       "filename": "src/app/apps/excise-duty/actions.ts",
       "exportedName": "updateExciseDuty"
     },
-    "40805fe55502a5608a10c616619054c23d434329dd": {
+    "4069db35689366c88a4f0d467b4606a4d675e038e8": {
       "workers": {
         "app/apps/excise-duty/page": {
           "moduleId": 73824,
@@ -438,7 +438,7 @@
       "filename": "src/app/apps/excise-duty/actions.ts",
       "exportedName": "deleteExciseDuty"
     },
-    "40118e56c6ca036b47cac80b34e1cc5a4a543461e8": {
+    "4013b67bdb2f1a3667864b9e5a5c63aaa195d0088e": {
       "workers": {
         "app/apps/gl-pl/page": {
           "moduleId": 95485,
@@ -450,7 +450,7 @@
       "filename": "src/app/apps/gl-pl/actions.ts",
       "exportedName": "uploadFile"
     },
-    "40abd20e60896616fd3f49956a64b08938be69afcb": {
+    "404a67551a9c08a3abe19cd8dd8268b7f62a7cc456": {
       "workers": {
         "app/apps/gl-pl/page": {
           "moduleId": 95485,
@@ -462,7 +462,7 @@
       "filename": "src/app/apps/gl-pl/actions.ts",
       "exportedName": "deleteUpload"
     },
-    "008e9990158dee49c3a1dbc545ae4828d429f679e3": {
+    "0061785d6b6dad5bdf46d68b51407d665b4e353a4c": {
       "workers": {
         "app/apps/gl-pl/page": {
           "moduleId": 95485,
@@ -474,7 +474,7 @@
       "filename": "src/app/apps/gl-pl/actions.ts",
       "exportedName": "getUploads"
     },
-    "40825781ed019c4c5817515f61659d3f5812353469": {
+    "40bd467d506167d5f370051676748bbdcc4621c040": {
       "workers": {
         "app/apps/interest-calculation/history/page": {
           "moduleId": 134,
@@ -486,7 +486,7 @@
       "filename": "src/app/apps/interest-calculation/history/actions.ts",
       "exportedName": "createInterestRate"
     },
-    "4037e5b5500f8f18cf511a2fd044375debe872e4f7": {
+    "4083f3675625a817fbefeee86082dab25ca1451f77": {
       "workers": {
         "app/apps/interest-calculation/history/page": {
           "moduleId": 134,
@@ -498,7 +498,7 @@
       "filename": "src/app/apps/interest-calculation/history/actions.ts",
       "exportedName": "deleteInterestRate"
     },
-    "60d339717a7e77fd6076d10a6b5d1b0f4475670cfa": {
+    "609618dd8e8d170de1a1e602680589186c5d6e0d92": {
       "workers": {
         "app/apps/interest-calculation/history/page": {
           "moduleId": 134,
@@ -510,7 +510,7 @@
       "filename": "src/app/apps/interest-calculation/history/actions.ts",
       "exportedName": "updateInterestRate"
     },
-    "409582edfec2bc0f8b63e66dfa297b7568b741f0a9": {
+    "40b935ca0b393295b5b1a233299ac2a69804e56f61": {
       "workers": {
         "app/apps/interest-calculation/sme-cc/page": {
           "moduleId": 37246,
@@ -522,7 +522,7 @@
       "filename": "src/app/apps/interest-calculation/sme-cc/actions.ts",
       "exportedName": "saveSmeCc"
     },
-    "40f45a9bf2b5c4070f85ab2acab9c1ae30468feb55": {
+    "40b4f4e759c5bbbf1156fe1acc783ea82a39aa9aa6": {
       "workers": {
         "app/apps/interest-calculation/sme-cc/page": {
           "moduleId": 37246,
@@ -534,7 +534,7 @@
       "filename": "src/app/apps/interest-calculation/sme-cc/actions.ts",
       "exportedName": "deleteSavedSmeCc"
     },
-    "408e6c2dec52892f4c6c77cd2a9dd578a251a9a688": {
+    "40e85d1933695f0796d18323a6bcc1183434685f98": {
       "workers": {
         "app/apps/kpi/page": {
           "moduleId": 1540,
@@ -546,7 +546,7 @@
       "filename": "src/app/apps/kpi/actions.ts",
       "exportedName": "fetchGLPLData"
     },
-    "60418873996b0afc47d84b08750f090232a237b5d1": {
+    "60cd5a9175019932ae8707d657144899db4b8ee710": {
       "workers": {
         "app/apps/kpi/page": {
           "moduleId": 1540,
@@ -558,7 +558,7 @@
       "filename": "src/app/apps/kpi/actions.ts",
       "exportedName": "saveKPIReport"
     },
-    "407fe7232d0e3caebd8ea31a56b3e2c92c7a7c0a14": {
+    "405e7f4cc5fd443e8abf788de65c0420abb5b95399": {
       "workers": {
         "app/apps/kpi/page": {
           "moduleId": 1540,
@@ -570,7 +570,7 @@
       "filename": "src/app/apps/kpi/actions.ts",
       "exportedName": "deleteKPIReport"
     },
-    "408780c6f30f0a20feff3847577c6a0c921732df61": {
+    "403e6cc84be0131c882f5943b04e9e9000d035c7bc": {
       "workers": {
         "app/apps/kpi/page": {
           "moduleId": 1540,
@@ -582,19 +582,7 @@
       "filename": "src/app/apps/kpi/actions.ts",
       "exportedName": "updateKPIBaseline"
     },
-    "009b0c46155bed1beedcb34c5b4a73330ea098c1a0": {
-      "workers": {
-        "app/apps/kpi/page": {
-          "moduleId": 1540,
-          "async": false,
-          "exportedName": "getKPIBaseline",
-          "filename": "src/app/apps/kpi/actions.ts"
-        }
-      },
-      "filename": "src/app/apps/kpi/actions.ts",
-      "exportedName": "getKPIBaseline"
-    },
-    "00f45e9cf748f69c9e8e1a0a406e1cecec4e105e54": {
+    "00738ce73fb553954b8bb2ee95e157cebbdeda076c": {
       "workers": {
         "app/apps/kpi/page": {
           "moduleId": 1540,
@@ -606,55 +594,19 @@
       "filename": "src/app/apps/kpi/actions.ts",
       "exportedName": "getKPIReports"
     },
-    "0029752464bd0c4573f01dafd1c7e80d191f6967a1": {
+    "00c6fb705447a24c83957ca8bac8023bc115cd0c2e": {
       "workers": {
-        "app/apps/letters/[id]/page": {
-          "moduleId": 79560,
+        "app/apps/kpi/page": {
+          "moduleId": 1540,
           "async": false,
-          "exportedName": "getSavedCCs",
-          "filename": "src/app/apps/letters/actions.ts"
-        },
-        "app/apps/letters/new/page": {
-          "moduleId": 99415,
-          "async": false,
-          "exportedName": "getSavedCCs",
-          "filename": "src/app/apps/letters/actions.ts"
-        },
-        "app/apps/letters/page": {
-          "moduleId": 47062,
-          "async": false,
-          "exportedName": "getSavedCCs",
-          "filename": "src/app/apps/letters/actions.ts"
+          "exportedName": "getKPIBaseline",
+          "filename": "src/app/apps/kpi/actions.ts"
         }
       },
-      "filename": "src/app/apps/letters/actions.ts",
-      "exportedName": "getSavedCCs"
+      "filename": "src/app/apps/kpi/actions.ts",
+      "exportedName": "getKPIBaseline"
     },
-    "00413f4bf8901151a849b9930b7f32a6321896b427": {
-      "workers": {
-        "app/apps/letters/[id]/page": {
-          "moduleId": 79560,
-          "async": false,
-          "exportedName": "getSavedRecipients",
-          "filename": "src/app/apps/letters/actions.ts"
-        },
-        "app/apps/letters/new/page": {
-          "moduleId": 99415,
-          "async": false,
-          "exportedName": "getSavedRecipients",
-          "filename": "src/app/apps/letters/actions.ts"
-        },
-        "app/apps/letters/page": {
-          "moduleId": 47062,
-          "async": false,
-          "exportedName": "getSavedRecipients",
-          "filename": "src/app/apps/letters/actions.ts"
-        }
-      },
-      "filename": "src/app/apps/letters/actions.ts",
-      "exportedName": "getSavedRecipients"
-    },
-    "005ff928c4862a6d5cc00b3a8c7a6c7f8e0d5b9af0": {
+    "00531f688d9e456e395feeec5fd304b3180491ba38": {
       "workers": {
         "app/apps/letters/[id]/page": {
           "moduleId": 79560,
@@ -678,7 +630,55 @@
       "filename": "src/app/apps/letters/actions.ts",
       "exportedName": "getUserLogo"
     },
-    "400e930048179a809d57b422006a61d9736b71ef70": {
+    "0095232527319220a68a6c1d1f72a24fc2e845ae73": {
+      "workers": {
+        "app/apps/letters/[id]/page": {
+          "moduleId": 79560,
+          "async": false,
+          "exportedName": "getSavedCCs",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/new/page": {
+          "moduleId": 99415,
+          "async": false,
+          "exportedName": "getSavedCCs",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "getSavedCCs",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/letters/actions.ts",
+      "exportedName": "getSavedCCs"
+    },
+    "00b92618a4de1161fea8f549ec6fa9a2948f2c9525": {
+      "workers": {
+        "app/apps/letters/[id]/page": {
+          "moduleId": 79560,
+          "async": false,
+          "exportedName": "getSavedRecipients",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/new/page": {
+          "moduleId": 99415,
+          "async": false,
+          "exportedName": "getSavedRecipients",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "getSavedRecipients",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/letters/actions.ts",
+      "exportedName": "getSavedRecipients"
+    },
+    "4000b490d6d3fa979ef59c01096bb1bcc927308883": {
       "workers": {
         "app/apps/letters/[id]/page": {
           "moduleId": 79560,
@@ -702,151 +702,7 @@
       "filename": "src/app/apps/letters/actions.ts",
       "exportedName": "deleteSavedCC"
     },
-    "401ea16f76f22b919560f9ea9805ad31121d0330e6": {
-      "workers": {
-        "app/apps/letters/[id]/page": {
-          "moduleId": 79560,
-          "async": false,
-          "exportedName": "createSavedRecipient",
-          "filename": "src/app/apps/letters/actions.ts"
-        },
-        "app/apps/letters/new/page": {
-          "moduleId": 99415,
-          "async": false,
-          "exportedName": "createSavedRecipient",
-          "filename": "src/app/apps/letters/actions.ts"
-        },
-        "app/apps/letters/page": {
-          "moduleId": 47062,
-          "async": false,
-          "exportedName": "createSavedRecipient",
-          "filename": "src/app/apps/letters/actions.ts"
-        }
-      },
-      "filename": "src/app/apps/letters/actions.ts",
-      "exportedName": "createSavedRecipient"
-    },
-    "4038d5bd6ea229e259e7398b934f819568601ddedc": {
-      "workers": {
-        "app/apps/letters/[id]/page": {
-          "moduleId": 79560,
-          "async": false,
-          "exportedName": "saveUserLogo",
-          "filename": "src/app/apps/letters/actions.ts"
-        },
-        "app/apps/letters/new/page": {
-          "moduleId": 99415,
-          "async": false,
-          "exportedName": "saveUserLogo",
-          "filename": "src/app/apps/letters/actions.ts"
-        },
-        "app/apps/letters/page": {
-          "moduleId": 47062,
-          "async": false,
-          "exportedName": "saveUserLogo",
-          "filename": "src/app/apps/letters/actions.ts"
-        }
-      },
-      "filename": "src/app/apps/letters/actions.ts",
-      "exportedName": "saveUserLogo"
-    },
-    "40499a94513e8f1d2c81f3390dcac35ba1d1ea449b": {
-      "workers": {
-        "app/apps/letters/[id]/page": {
-          "moduleId": 79560,
-          "async": false,
-          "exportedName": "createLetter",
-          "filename": "src/app/apps/letters/actions.ts"
-        },
-        "app/apps/letters/new/page": {
-          "moduleId": 99415,
-          "async": false,
-          "exportedName": "createLetter",
-          "filename": "src/app/apps/letters/actions.ts"
-        },
-        "app/apps/letters/page": {
-          "moduleId": 47062,
-          "async": false,
-          "exportedName": "createLetter",
-          "filename": "src/app/apps/letters/actions.ts"
-        }
-      },
-      "filename": "src/app/apps/letters/actions.ts",
-      "exportedName": "createLetter"
-    },
-    "4053efe1378fe1a48177892792701faeeeeb77185c": {
-      "workers": {
-        "app/apps/letters/[id]/page": {
-          "moduleId": 79560,
-          "async": false,
-          "exportedName": "createSavedCC",
-          "filename": "src/app/apps/letters/actions.ts"
-        },
-        "app/apps/letters/new/page": {
-          "moduleId": 99415,
-          "async": false,
-          "exportedName": "createSavedCC",
-          "filename": "src/app/apps/letters/actions.ts"
-        },
-        "app/apps/letters/page": {
-          "moduleId": 47062,
-          "async": false,
-          "exportedName": "createSavedCC",
-          "filename": "src/app/apps/letters/actions.ts"
-        }
-      },
-      "filename": "src/app/apps/letters/actions.ts",
-      "exportedName": "createSavedCC"
-    },
-    "405674cbc30fc635184036f645929501f425bfa1a8": {
-      "workers": {
-        "app/apps/letters/[id]/page": {
-          "moduleId": 79560,
-          "async": false,
-          "exportedName": "getLetterById",
-          "filename": "src/app/apps/letters/actions.ts"
-        },
-        "app/apps/letters/new/page": {
-          "moduleId": 99415,
-          "async": false,
-          "exportedName": "getLetterById",
-          "filename": "src/app/apps/letters/actions.ts"
-        },
-        "app/apps/letters/page": {
-          "moduleId": 47062,
-          "async": false,
-          "exportedName": "getLetterById",
-          "filename": "src/app/apps/letters/actions.ts"
-        }
-      },
-      "filename": "src/app/apps/letters/actions.ts",
-      "exportedName": "getLetterById"
-    },
-    "4056db67ef9307220127ddb9d8fb67781a3707dcf7": {
-      "workers": {
-        "app/apps/letters/[id]/page": {
-          "moduleId": 79560,
-          "async": false,
-          "exportedName": "deleteSavedRecipient",
-          "filename": "src/app/apps/letters/actions.ts"
-        },
-        "app/apps/letters/new/page": {
-          "moduleId": 99415,
-          "async": false,
-          "exportedName": "deleteSavedRecipient",
-          "filename": "src/app/apps/letters/actions.ts"
-        },
-        "app/apps/letters/page": {
-          "moduleId": 47062,
-          "async": false,
-          "exportedName": "deleteSavedRecipient",
-          "filename": "src/app/apps/letters/actions.ts"
-        }
-      },
-      "filename": "src/app/apps/letters/actions.ts",
-      "exportedName": "deleteSavedRecipient"
-    },
-    "408bf1dd400cb2db64f15415474d87fc0ad33f98c1": {
+    "4023354d7e410a51d5278dac4193b539b897c61b2a": {
       "workers": {
         "app/apps/letters/[id]/page": {
           "moduleId": 79560,
@@ -870,7 +726,7 @@
       "filename": "src/app/apps/letters/actions.ts",
       "exportedName": "deleteLetter"
     },
-    "40e971a5e7f32606239573b3c9825f34a111feea58": {
+    "406c14775ac0cb4939ede2fe0546f9c1d9e9a93adb": {
       "workers": {
         "app/apps/letters/[id]/page": {
           "moduleId": 79560,
@@ -894,31 +750,151 @@
       "filename": "src/app/apps/letters/actions.ts",
       "exportedName": "getLetters"
     },
-    "60112cead550f0236eb82f11bd5afcde8e74f996c3": {
+    "40755184550cc4a59315a8698c089984dfc42a1624": {
       "workers": {
         "app/apps/letters/[id]/page": {
           "moduleId": 79560,
           "async": false,
-          "exportedName": "updateSavedCC",
+          "exportedName": "getLetterById",
           "filename": "src/app/apps/letters/actions.ts"
         },
         "app/apps/letters/new/page": {
           "moduleId": 99415,
           "async": false,
-          "exportedName": "updateSavedCC",
+          "exportedName": "getLetterById",
           "filename": "src/app/apps/letters/actions.ts"
         },
         "app/apps/letters/page": {
           "moduleId": 47062,
           "async": false,
-          "exportedName": "updateSavedCC",
+          "exportedName": "getLetterById",
           "filename": "src/app/apps/letters/actions.ts"
         }
       },
       "filename": "src/app/apps/letters/actions.ts",
-      "exportedName": "updateSavedCC"
+      "exportedName": "getLetterById"
     },
-    "6087e2829952266786aa4db6eba6eda0ae330aea0b": {
+    "40a3df0e67735667f0b21a359ebd0d123289e7bc67": {
+      "workers": {
+        "app/apps/letters/[id]/page": {
+          "moduleId": 79560,
+          "async": false,
+          "exportedName": "createSavedCC",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/new/page": {
+          "moduleId": 99415,
+          "async": false,
+          "exportedName": "createSavedCC",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "createSavedCC",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/letters/actions.ts",
+      "exportedName": "createSavedCC"
+    },
+    "40a51c9fe5e6e3ff7e7c8d220f88b643245dd832ad": {
+      "workers": {
+        "app/apps/letters/[id]/page": {
+          "moduleId": 79560,
+          "async": false,
+          "exportedName": "createLetter",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/new/page": {
+          "moduleId": 99415,
+          "async": false,
+          "exportedName": "createLetter",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "createLetter",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/letters/actions.ts",
+      "exportedName": "createLetter"
+    },
+    "40bcab4404e7b0a5dc7146616b55671871b3c11a88": {
+      "workers": {
+        "app/apps/letters/[id]/page": {
+          "moduleId": 79560,
+          "async": false,
+          "exportedName": "deleteSavedRecipient",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/new/page": {
+          "moduleId": 99415,
+          "async": false,
+          "exportedName": "deleteSavedRecipient",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "deleteSavedRecipient",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/letters/actions.ts",
+      "exportedName": "deleteSavedRecipient"
+    },
+    "40bf8e8ac3f60ba6bdead6b7dee42706b11013d913": {
+      "workers": {
+        "app/apps/letters/[id]/page": {
+          "moduleId": 79560,
+          "async": false,
+          "exportedName": "saveUserLogo",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/new/page": {
+          "moduleId": 99415,
+          "async": false,
+          "exportedName": "saveUserLogo",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "saveUserLogo",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/letters/actions.ts",
+      "exportedName": "saveUserLogo"
+    },
+    "40c5a9030e69d862c9f02d2ed78211fefe9c898d65": {
+      "workers": {
+        "app/apps/letters/[id]/page": {
+          "moduleId": 79560,
+          "async": false,
+          "exportedName": "createSavedRecipient",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/new/page": {
+          "moduleId": 99415,
+          "async": false,
+          "exportedName": "createSavedRecipient",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "createSavedRecipient",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/letters/actions.ts",
+      "exportedName": "createSavedRecipient"
+    },
+    "600591a3b5f782730699dfed29132656f947b3655d": {
       "workers": {
         "app/apps/letters/[id]/page": {
           "moduleId": 79560,
@@ -942,7 +918,31 @@
       "filename": "src/app/apps/letters/actions.ts",
       "exportedName": "updateLetter"
     },
-    "608cc1b9b4c5033d2cd8fa6bc1754b64ece2ce83a5": {
+    "60b2543efdace295d01ac427dec507dc2e380ddab9": {
+      "workers": {
+        "app/apps/letters/[id]/page": {
+          "moduleId": 79560,
+          "async": false,
+          "exportedName": "updateSavedCC",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/new/page": {
+          "moduleId": 99415,
+          "async": false,
+          "exportedName": "updateSavedCC",
+          "filename": "src/app/apps/letters/actions.ts"
+        },
+        "app/apps/letters/page": {
+          "moduleId": 47062,
+          "async": false,
+          "exportedName": "updateSavedCC",
+          "filename": "src/app/apps/letters/actions.ts"
+        }
+      },
+      "filename": "src/app/apps/letters/actions.ts",
+      "exportedName": "updateSavedCC"
+    },
+    "60ce3f22d475ec666641decc3f41081ebe9d27cd03": {
       "workers": {
         "app/apps/letters/[id]/page": {
           "moduleId": 79560,
@@ -966,7 +966,7 @@
       "filename": "src/app/apps/letters/actions.ts",
       "exportedName": "updateSavedRecipient"
     },
-    "40d6211f23ae0182b062272d45428a0abdaa5aee0c": {
+    "403a6aa6d50e7a19149bfb183320c6e62da93c1856": {
       "workers": {
         "app/apps/notes/page": {
           "moduleId": 11110,
@@ -978,7 +978,7 @@
       "filename": "src/app/apps/notes/actions.ts",
       "exportedName": "saveNote"
     },
-    "40336e578dc0a77f462a4ed6d89cb39278e4dd373d": {
+    "406a68d26d406afbfc5ebf9e7043ad7cd5d815c2ec": {
       "workers": {
         "app/apps/passwords/page": {
           "moduleId": 89239,
@@ -990,7 +990,7 @@
       "filename": "src/app/apps/passwords/actions.ts",
       "exportedName": "createPassword"
     },
-    "405797e4e28ad7d848be997d19bd04b81b7f0e1c57": {
+    "40e1423d827aa4b2fad4b094111375f5f751fbe263": {
       "workers": {
         "app/apps/passwords/page": {
           "moduleId": 89239,
@@ -1002,7 +1002,7 @@
       "filename": "src/app/apps/passwords/actions.ts",
       "exportedName": "deletePassword"
     },
-    "60eda9f56ff3b10520e9c24b99923c9cba5789c969": {
+    "60fda4af5a8ec392b698e20c1a7debb8f789471d63": {
       "workers": {
         "app/apps/passwords/page": {
           "moduleId": 89239,
@@ -1014,7 +1014,7 @@
       "filename": "src/app/apps/passwords/actions.ts",
       "exportedName": "updatePassword"
     },
-    "009f0bbf816775d96464db4894af10435ce192625d": {
+    "005e130b1e3f8c8bd7939d8869ab18d68db572b43d": {
       "workers": {
         "app/apps/tasks/page": {
           "moduleId": 72087,
@@ -1026,7 +1026,7 @@
       "filename": "src/app/apps/tasks/actions.ts",
       "exportedName": "getTasks"
     },
-    "401a88413f111fb930c0f7d79da829131cb2892602": {
+    "4084cd3dea8fa16fb315f7bf1ede7729107262ef7b": {
       "workers": {
         "app/apps/tasks/page": {
           "moduleId": 72087,
@@ -1038,7 +1038,7 @@
       "filename": "src/app/apps/tasks/actions.ts",
       "exportedName": "createTask"
     },
-    "40b77b8a5582bcbbccac633aed6ab268d2dd16a395": {
+    "40f35aedc6471da0b615029926525756588c698e51": {
       "workers": {
         "app/apps/tasks/page": {
           "moduleId": 72087,
@@ -1050,7 +1050,7 @@
       "filename": "src/app/apps/tasks/actions.ts",
       "exportedName": "deleteTask"
     },
-    "6035b7e48b933c2967a52baf2b23af1bde2a1dc8ae": {
+    "600570f681cf267a53a41eb3b870a6e8b7ba886011": {
       "workers": {
         "app/apps/tasks/page": {
           "moduleId": 72087,
@@ -1064,5 +1064,5 @@
     }
   },
   "edge": {},
-  "encryptionKey": "AFv2LoCS7717PIE341/DaKIzGtmVtXglWEBjGgQv03k="
+  "encryptionKey": "PD5I3u5q0ufrrjXzIHEn4SOASjBIFPKmO48uzD8SHTQ="
 }

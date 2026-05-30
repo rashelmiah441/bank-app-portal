@@ -1,6 +1,6 @@
 {
   "node": {
-    "004ff9eb6c7a98384e8c2010533d89022bea1909d3": {
+    "004d72cd70323770e7b020b3a42ca3d88f78d768bf": {
       "workers": {
         "app/apps/branch-position/compare/page": {
           "moduleId": 7398,
@@ -12,7 +12,7 @@
       "exportedName": "$$RSC_SERVER_ACTION_0",
       "filename": "src/app/apps/layout.tsx"
     },
-    "70c937bdaad7930c982ebbd6a1a5012eef950828d0": {
+    "708c81ca5b4e8d440b44f313bf7d00f7e148420ca2": {
       "workers": {
         "app/apps/branch-position/compare/page": {
           "moduleId": 7398,
